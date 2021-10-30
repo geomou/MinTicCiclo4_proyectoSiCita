@@ -1,0 +1,42 @@
+﻿<mockup version="5.3" minAllowVersion="5.3" ID="ED630736-A5FD-47EE-90E7-E549471F8440" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325">
+  <controls controlCount="4">
+    <control controlID="21A104F6-281E-484E-8406-2D80AD1E2E0E" controlTypeID="Image" x="10" y="10" w="88" h="73" zOrder="0">
+      <ShadowBlur>0,5</ShadowBlur>
+      <URL>1E464B7DABFBE2C18E4597E4481B96C7.png</URL>
+    </control>
+    <control controlID="2F714096-DC06-4DF9-8029-0AF080FA7247" controlTypeID="TextInput" x="10" y="108" w="330" h="39" zOrder="1">
+      <ShadowBlur>0,5</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>Nombre</placeHolder>
+    </control>
+    <control controlID="39D522B0-1941-4002-8C04-9D17E6A8795B" controlTypeID="CheckBoxGroup" x="27" y="157" w="296" h="174" zOrder="2">
+      <ShadowBlur>0,5</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False" useDefaultFontFamily="False"/>
+      <text>%5B%5DEmpresa+1%0D%0A%5Bx%5DEmpresa+2%0D%0A%5B%5DEmpresa+13%0D%0A%5B%5DEmpresa+4</text>
+      <textSize>12</textSize>
+      <lineSpacing>0</lineSpacing>
+      <textDirection>tdLeft</textDirection>
+      <size>15</size>
+      <itemHeight>36</itemHeight>
+      <itemRect>[{"left":0,"top":0,"right":296,"bottom":36},{"left":0,"top":46,"right":296,"bottom":82},{"left":0,"top":92,"right":296,"bottom":128},{"left":0,"top":138,"right":296,"bottom":174}]</itemRect>
+    </control>
+    <control controlID="0AE46C8D-937A-4048-8B6F-8A19BB8A05E1" controlTypeID="Button" x="120" y="341" w="120" h="46" zOrder="3">
+      <ShadowBlur>0,5</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False" useDefaultFontFamily="False"/>
+      <text>Actualizar</text>
+      <textSize>12</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <radius>100</radius>
+      <radiusIsPercent>True</radiusIsPercent>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

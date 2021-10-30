@@ -1,0 +1,49 @@
+﻿<mockup version="5.3" minAllowVersion="5.3" ID="99FBD005-EE94-4E5B-9385-79B7259C484A" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325" clipArea="(0,0,0,0)">
+  <controls controlCount="6">
+    <control controlID="EC711DAB-46D3-4722-9082-C6D258BAD3C7" controlTypeID="ImageCarousel" x="35" y="16" w="301" h="286" zOrder="0">
+      <groupChildrenDescriptors>
+        <control controlID="92C320B2-E4D4-4BBF-9AB9-4B10D3827B7C" controlTypeID="ImageBackground" x="0" y="0" w="301" h="286" zOrder="0">
+          <caption>logo_base_car</caption>
+          <groupChildrenDescriptors/>
+          <URL>D858D28EA2980E0EAFB4F9E43BD1CC0E.png</URL>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="50C8DD33-9107-49C4-A5CB-2DFB885001C7" controlTypeID="TextInput" x="47" y="343" w="276" h="39" zOrder="1">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False" useDefaultFontFamily="False"/>
+      <textSize>12</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>Usuario</placeHolder>
+      <radius>8</radius>
+    </control>
+    <control controlID="ED9E6177-A4BA-466C-A5D3-3884A6570B62" controlTypeID="TextInput" x="47" y="399" w="276" h="39" zOrder="2">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False" useDefaultFontFamily="False"/>
+      <textSize>12</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>clave</placeHolder>
+      <radius>8</radius>
+    </control>
+    <control controlID="1AB0C855-0EC1-4F8A-8C6C-D5BD5B9F3567" controlTypeID="Button" x="125" y="455" w="120" h="48" zOrder="3">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False" useDefaultFontFamily="False"/>
+      <text>INGRESAR</text>
+      <textSize>12</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <radius>100</radius>
+      <radiusIsPercent>True</radiusIsPercent>
+    </control>
+    <control controlID="948B732A-A7B1-47EE-842A-7B492F72B55F" controlTypeID="TextArea" x="40" y="519" w="283" h="33" zOrder="4">
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Aliquam+scelerisque+ex+vitae+arcu+feugiat+condimentum.+Interdum+et+malesuada+fames+ac+ante+ipsum+primis+in+faucibus.+Nullam+porttitor+id+nunc+eget+consequat.+Proin+egestas+fringilla+vulputate.+Phasellus+eu+augue+ut+dolor+porta+finibus.+Nunc+egestas+malesuada+maximus.+Donec+vitae+lacus+at+turpis+tempor+auctor+in+pellentesque+eros.+Donec+sit+amet+nunc+risus.+Proin+rutrum%2C+lectus+at+pharetra+cursus%2C+nulla+lorem+lacinia+augue%2C+vel+maximus+enim+ipsum+non+massa.+Quisque+sit+amet+elit+luctus%2C+vestibulum+ligula+et%2C+rhoncus+urna.+Vestibulum+ut+pellentesque+magna.+Maecenas+lacinia+placerat+rutrum.+Nunc+consectetur+viverra+maximus.%0D%0A</text>
+      <selectedIndex>-1</selectedIndex>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

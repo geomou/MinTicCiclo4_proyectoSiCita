@@ -1,0 +1,84 @@
+﻿<mockup version="5.3" minAllowVersion="5.3" ID="184CB6CF-90EB-46FC-9948-2B2D54DD8706" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325">
+  <controls controlCount="10">
+    <control controlID="4B0EA60B-70F7-4E49-AFED-93BCB71B6C68" controlTypeID="TextInput" x="32" y="87" w="195" h="39" zOrder="0">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>Indentificaci%C3%B3n</placeHolder>
+    </control>
+    <control controlID="E2428CEC-906C-40CE-B725-7FB970880E20" controlTypeID="TextInput" x="32" y="136" w="296" h="39" zOrder="1">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>Nombre</placeHolder>
+    </control>
+    <control controlID="56090A41-2020-442C-8C15-74277AACD8B3" controlTypeID="TextInput" x="32" y="185" w="296" h="39" zOrder="2">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>Telefono+1</placeHolder>
+    </control>
+    <control controlID="D26BE838-796A-4573-B109-1685AC7B2989" controlTypeID="TextInput" x="32" y="234" w="296" h="39" zOrder="3">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>Movil</placeHolder>
+    </control>
+    <control controlID="CFF4D71D-255C-43E4-B96A-21BDA80C090C" controlTypeID="Button" x="127" y="352" w="112" h="32" zOrder="4">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False" useDefaultFontFamily="False"/>
+      <text>Actualizar</text>
+      <textSize>12</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <radius>100</radius>
+      <radiusIsPercent>True</radiusIsPercent>
+    </control>
+    <control controlID="3FDE0C1D-867D-4CD1-8343-7A77E39C092E" controlTypeID="Image" x="31" y="6" w="89" h="71" zOrder="5">
+      <ShadowBlur>0</ShadowBlur>
+      <URL>1E464B7DABFBE2C18E4597E4481B96C7.png</URL>
+    </control>
+    <control controlID="05043935-5BD7-4397-BAB0-CFFCD1B8FDD0" controlTypeID="TextInput" x="31" y="287" w="296" h="39" zOrder="6">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>Direcci%C3%B3n</placeHolder>
+    </control>
+    <control controlID="8C95AB49-C78C-4093-955A-9AFC343A5C05" controlTypeID="CheckBoxGroup" x="31" y="394" w="296" h="174" zOrder="7">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False" useDefaultFontFamily="False"/>
+      <text>%5B%5DEmpresa+1%0D%0A%5Bx%5DEmpresa+2%0D%0A%5B%5DEmpresa+13%0D%0A%5B%5DEmpresa+4</text>
+      <textSize>12</textSize>
+      <lineSpacing>0</lineSpacing>
+      <textDirection>tdLeft</textDirection>
+      <size>15</size>
+      <itemHeight>36</itemHeight>
+      <itemRect>[{"left":0,"top":0,"right":296,"bottom":36},{"left":0,"top":46,"right":296,"bottom":82},{"left":0,"top":92,"right":296,"bottom":128},{"left":0,"top":138,"right":296,"bottom":174}]</itemRect>
+    </control>
+    <control controlID="CC39462D-E948-4F60-9E91-7A3912E3393F" controlTypeID="Button" x="137" y="578" w="102" h="38" zOrder="8">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False" useDefaultFontFamily="False"/>
+      <text>Actualizar</text>
+      <textSize>12</textSize>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <radius>100</radius>
+      <radiusIsPercent>True</radiusIsPercent>
+    </control>
+    <control controlID="591B5CE4-6CDB-42A3-8A46-8D8366D467FF" controlTypeID="Image" x="255" y="6" w="72" h="94" zOrder="9">
+      <ShadowBlur>0,5</ShadowBlur>
+      <URL>F95812F2E599DB88DF3A352E62534F55.jpg</URL>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

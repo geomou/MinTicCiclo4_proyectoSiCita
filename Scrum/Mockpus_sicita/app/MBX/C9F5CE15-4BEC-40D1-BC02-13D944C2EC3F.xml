@@ -1,0 +1,90 @@
+﻿<mockup version="5.3" minAllowVersion="5.3" ID="C9F5CE15-4BEC-40D1-BC02-13D944C2EC3F" platform="MtMobile" defaultW="360" defaultH="640" measureW="360" measureH="640" screenOrientation="MoPortrait" mobileScreenScale="1.77777779102325">
+  <controls controlCount="12">
+    <control controlID="A27B779A-2309-4509-8FC9-BFEA43338A3C" controlTypeID="Image" x="10" y="10" w="88" h="73" zOrder="0">
+      <ShadowBlur>0,5</ShadowBlur>
+      <URL>1E464B7DABFBE2C18E4597E4481B96C7.png</URL>
+    </control>
+    <control controlID="C3033FD4-2E20-4034-A923-6FF80F5DC4F1" controlTypeID="TextInput" x="33" y="109" w="213" h="39" zOrder="1">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>Indentificaci%C3%B3n</placeHolder>
+    </control>
+    <control controlID="78233D15-FB4B-44BC-A3B0-60785883D458" controlTypeID="TextInput" x="33" y="158" w="296" h="39" zOrder="2">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>Razon+Social</placeHolder>
+    </control>
+    <control controlID="BD1DA0E9-C0C2-4D04-8DCB-A3F46D4C57C0" controlTypeID="TextInput" x="33" y="207" w="296" h="39" zOrder="3">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>Direccion</placeHolder>
+    </control>
+    <control controlID="50739AF8-0EBA-401C-B2C7-BC992A0C23E0" controlTypeID="TextInput" x="33" y="256" w="296" h="39" zOrder="4">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>Telefono+1</placeHolder>
+    </control>
+    <control controlID="B9601AFB-AE33-4345-9EC1-C97C80FACD26" controlTypeID="TextInput" x="32" y="309" w="296" h="39" zOrder="5">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>Telefono+2</placeHolder>
+    </control>
+    <control controlID="D0E001A3-3DD8-4B12-B681-1D89D507A3E5" controlTypeID="TextInput" x="32" y="363" w="296" h="39" zOrder="6">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>Contacto</placeHolder>
+    </control>
+    <control controlID="BBECD51E-13A2-4038-913A-2C09791A20B3" controlTypeID="CheckBox" x="37" y="416" w="140" h="36" zOrder="7">
+      <ShadowBlur>0,5</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <text>Activa</text>
+      <lineSpacing>0</lineSpacing>
+      <size>15</size>
+    </control>
+    <control controlID="568455CB-FB61-41D3-9512-6E839937A399" controlTypeID="TextInput" x="32" y="456" w="296" h="39" zOrder="8">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>URL+API</placeHolder>
+    </control>
+    <control controlID="D9846FA9-ECAD-41CE-9668-88EC0CB20A8F" controlTypeID="TextInput" x="32" y="511" w="296" h="39" zOrder="9">
+      <ShadowBlur>0</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False"/>
+      <lineSpacing>0</lineSpacing>
+      <selectedIndex>-1</selectedIndex>
+      <placeHolder>clave</placeHolder>
+    </control>
+    <control controlID="2B6F5A4E-10DA-4C4E-9843-5851A625BC5D" controlTypeID="Button" x="111" y="567" w="120" h="34" zOrder="10">
+      <ShadowBlur>0,5</ShadowBlur>
+      <font family="Segoe+UI" displayName="Segoe+UI" postScript="" weightStyle="Normal" weight="400" isBold="False" isItalic="False" useDefaultFontFamily="False"/>
+      <text>Actualizar</text>
+      <textSize>12</textSize>
+      <lineSpacing>0</lineSpacing>
+      <radius>100</radius>
+      <radiusIsPercent>True</radiusIsPercent>
+    </control>
+    <control controlID="0D73AD8E-D5C4-499A-A5C1-4AD38FA26188" controlTypeID="Image" x="116" y="33" w="192" h="50" zOrder="11">
+      <ShadowBlur>0,5</ShadowBlur>
+      <URL>D2AFB72887708E6EE50FA90C9A862548.png</URL>
+    </control>
+  </controls>
+  <param>
+    <backgroundColor>4294967295</backgroundColor>
+    <fontSize>0</fontSize>
+    <fontFamily/>
+    <guideLines/>
+  </param>
+</mockup>

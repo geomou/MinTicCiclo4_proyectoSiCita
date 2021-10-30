@@ -1,0 +1,67 @@
+﻿<project version="2.9" name="Mockpus_sicita" ID="595A72F1-17A9-4199-A702-6138B9EC6240">
+  <params>
+    <pageParam version="5.3" minAllowVersion="5.3"/>
+    <projectParam version="2.9" minAllowVersion="2.9" platform="MtMobile" orientation="MoPortrait" mobileScreenScale="1.77777779102325" mobileType="mmtAndroid" pageSize="(360,640)" backgroundColor="4294967295" fontSize="0" fontFamily="" projectType="ptPersonalProject" isShowTitleIndex="False"/>
+    <previewParam version="1.0"/>
+    <colorParam version="1.0"/>
+  </params>
+  <pages>
+    <page name="Reg Vehiculo" ID="08B3F4F0-6EC3-4BE0-8C9E-6723DD2BC5C6" expanded="True" code="eGlu8kaza5" thumbCode="eGlu8kaza5" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="1E464B7DABFBE2C18E4597E4481B96C7.png"/>
+        <image key="7153F246EAD32731AABC4543D32F1A7D.png"/>
+      </images>
+    </page>
+    <page name="Login" ID="99FBD005-EE94-4E5B-9385-79B7259C484A" expanded="True" code="VV4cQEAHAY" thumbCode="VV4cQEAHAY" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="D858D28EA2980E0EAFB4F9E43BD1CC0E.png"/>
+      </images>
+    </page>
+    <page name="Registro" ID="184CB6CF-90EB-46FC-9948-2B2D54DD8706" expanded="False" code="Ajo38KqBl1" thumbCode="Ajo38KqBl1" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="1E464B7DABFBE2C18E4597E4481B96C7.png"/>
+        <image key="F95812F2E599DB88DF3A352E62534F55.jpg"/>
+      </images>
+    </page>
+    <page name="UsuarioEmpresa" ID="ED630736-A5FD-47EE-90E7-E549471F8440" expanded="False" code="gA8xBlGkhh" thumbCode="XoVbVkr1Uy" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="1E464B7DABFBE2C18E4597E4481B96C7.png"/>
+      </images>
+    </page>
+    <page name="Marca_Modelo" ID="F5D98184-A8F1-4AFA-8475-6D85FD698F32" expanded="False" code="eH5suSq68Y" thumbCode="eH5suSq68Y" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="1E464B7DABFBE2C18E4597E4481B96C7.png"/>
+        <image key="7153F246EAD32731AABC4543D32F1A7D.png"/>
+      </images>
+    </page>
+    <page name="Empresa" ID="C9F5CE15-4BEC-40D1-BC02-13D944C2EC3F" expanded="True" code="8D3qytPliE" thumbCode="8D3qytPliE" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="D2AFB72887708E6EE50FA90C9A862548.png"/>
+        <image key="1E464B7DABFBE2C18E4597E4481B96C7.png"/>
+      </images>
+    </page>
+    <page name="Sede" ID="AA2E008C-0D42-4088-986B-1C9EC3385ADA" expanded="True" code="bjiAP3e1pA" thumbCode="bjiAP3e1pA" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="1E464B7DABFBE2C18E4597E4481B96C7.png"/>
+        <image key="7EE6FFD89A49AC097DBABF3A08383159.png"/>
+      </images>
+    </page>
+    <page name="SedeHorarios" ID="DDBAF36A-1928-4361-82A2-D7F523DAE30A" expanded="True" code="mxcfKoGwXB" thumbCode="mxcfKoGwXB" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="1E464B7DABFBE2C18E4597E4481B96C7.png"/>
+        <image key="7EE6FFD89A49AC097DBABF3A08383159.png"/>
+      </images>
+    </page>
+  </pages>
+  <trash/>
+  <deletes/>
+  <masters/>
+  <images>
+    <image key="D2AFB72887708E6EE50FA90C9A862548.png"/>
+    <image key="D858D28EA2980E0EAFB4F9E43BD1CC0E.png"/>
+    <image key="1E464B7DABFBE2C18E4597E4481B96C7.png"/>
+    <image key="7EE6FFD89A49AC097DBABF3A08383159.png"/>
+    <image key="7153F246EAD32731AABC4543D32F1A7D.png"/>
+    <image key="F95812F2E599DB88DF3A352E62534F55.jpg"/>
+  </images>
+</project>
