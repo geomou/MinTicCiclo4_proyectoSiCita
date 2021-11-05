@@ -1,5 +1,31 @@
 <resources>
     <string name="app_name">SiCita</string>
+
+    <string name="usuario">Usuario</string>
+    <string name="clave">Clave</string>
+    <string name="enviar">Enviar Información EMail</string>
+
+
+    <string name="actualizar">Actualizar</string>
+    <string name="borrar">Borrar</string>
+
+    <string name="idempresa">Id Empresa</string>
+    <string name="emp">Empresa</string>
+    <string name="codsede">Id Sede</string>
+    <string name="nombresede">Nombre Sede</string>
+    <string name="dirsede">Dirección Sede</string>
+
+    <string name="mantto">Mantenimiento</string>
+    <string name="express">Servicio Express</string>
+    <string name="lavado">Lavado</string>
+    <string name="RTM">RTM</string>
+
+
+
+
+
+
+
     <string name="login_name">Logueo</string>
     <string name="LoginUsuario">Registro Usuario</string>
     <string name="LoginAdmin">Registro Admin</string>
@@ -18,5 +44,13 @@
     <string name="Cliente">Cita</string>
     <string name="Compañia">Cita</string>
     <string name="Informes">Cita</string>
+
+    <string name="Identificacion">Identificación</string>
+    <string name="Nombre">Nombres</string>
+    <string name="tel1">Telefono </string>
+    <string name="movil">Movil</string>
+    <string name="email">Email</string>
+    <string name="chkadmin">Es Admin</string>
+    <string name="chkasesor">Es Asesor</string>
 
 </resources>

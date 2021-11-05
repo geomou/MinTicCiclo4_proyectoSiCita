@@ -31,10 +31,34 @@ public class Principal extends AppCompatActivity {
         return  true   ;
 
     }
-    public boolean  onOptionsItemsSelected(MenuItem menuItem)
+
+    public boolean onOptionsItemSelected(MenuItem menuItem)
     {
         int id=menuItem.getItemId();
+        if (id == R.id.mnu_LoginAdmin)
+        {
+            Intent newIntent=new Intent(this,LoginAdmin.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
 
+        }
+        else if(id == R.id.mnu_LoginUsuario)
+        {
+            Intent newIntent=new Intent(this,LoginUsuario.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+
+        } else if(id == R.id.mnu_Sede)
+        {
+            Intent newIntent=new Intent(this,Sede.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+
+        }
+
+
+
+/*
         switch (id)
         {
             case R.id.mnu_LoginAdmin :
@@ -79,8 +103,11 @@ public class Principal extends AppCompatActivity {
                 startActivity(newIntenth);
 
         }
-        return  super.onOptionsItemSelected(menuItem);
+*/
+        return super.onOptionsItemSelected(menuItem);
     }
+
+
     @Override
     public boolean onKeyDown(int KeyCode, KeyEvent event){
         if (KeyCode ==KeyEvent.KEYCODE_BACK )
