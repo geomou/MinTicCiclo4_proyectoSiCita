@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SiCita</string>
+    <string name="login_name">Logueo</string>
+    <string name="LoginUsuario">Registro Usuario</string>
+    <string name="LoginAdmin">Registro Admin</string>
+    <string name="Empresa">Empresa</string>
+    <string name="Sede">Sede</string>
+    <string name="MarcaModelo">Maestro de Marca/Modelo</string>
+    <string name="SedeHorario">Horario Sede</string>
+    <string name="EmpresaUsuario">Usuario Empresa(Marca)</string>
+    <string name="Vehiculo">Vehículo</string>
+    <string name="Asesor">Asesor</string>
+    <string name="CitaBuscar">Buscar Cita</string>
+    <string name="Cita">Cita</string>
+    <string name="MaestroCita">Datos maestros Cita</string>
+    <string name="Historia">Cita</string>
+    <string name="Registro">Cita</string>
+    <string name="Cliente">Cita</string>
+    <string name="Compañia">Cita</string>
+    <string name="Informes">Cita</string>
+
+</resources>

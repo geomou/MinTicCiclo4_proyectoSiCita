@@ -1,4 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/msnu_empresausuario"
+        android:title="@string/EmpresaUsuario" />
+    <item
+        android:id="@+id/mnu_LoginAdmin"
+        android:title="@string/LoginAdmin" />
+    <item
+        android:id="@+id/mnu_LoginUsuario"
+        android:title="@string/LoginUsuario" />
+    <item
+        android:id="@+id/mnu_MaestroCita"
+        android:title="@string/MaestroCita" />
+    <item
+        android:id="@+id/mnu_MarcaModelo"
+        android:title="@string/MarcaModelo" />
+    <item
+        android:id="@+id/mnu_Sede"
+        android:title="@string/Sede" />
+    <item
+        android:id="@+id/mnu_SedeHorario"
+        android:title="@string/SedeHorario" />
+    <item
+        android:id="@+id/mnu_asesor"
+        android:title="@string/Asesor" />
+    <item
+        android:id="@+id/mnu_Empresa"
+        android:title="@string/Empresa"></item>
+    <item
+        android:id="@+id/mnu_Vehiculo"
+        android:title="@string/Vehiculo" />
+    <item
+        android:id="@+id/mnu_CitaBuscar"
+        android:title="@string/CitaBuscar" />
+    <item
+        android:id="@+id/mnu_Cita"
+        android:title="@string/Cita" />
+    <item
+        android:id="@+id/mnu_Historia"
+        android:title="@string/Historia" />
 </menu>
