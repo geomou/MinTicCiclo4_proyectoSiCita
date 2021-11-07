@@ -2,9 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_intro"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/logo_base_car"
     tools:context=".Splash">
 
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="402dp"
+        android:layout_height="544dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="105dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

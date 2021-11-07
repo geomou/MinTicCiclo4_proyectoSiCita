@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/msnu_empresausuario"
+        android:id="@+id/mnu_empresausuario"
         android:title="@string/EmpresaUsuario" />
     <item
         android:id="@+id/mnu_LoginAdmin"

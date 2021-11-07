@@ -54,56 +54,78 @@ public class Principal extends AppCompatActivity {
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
-        }
-
-
-
-/*
-        switch (id)
+        } else if(id == R.id.mnu_SedeHorario)
         {
-            case R.id.mnu_LoginAdmin :
-                Intent newIntent=new Intent(this,LoginAdmin.class);
-                newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(newIntent);
-            case R.id.mnu_LoginUsuario:
-                Intent newIntentlu=new Intent(this,LoginUsuario.class);
-                newIntentlu.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(newIntentlu);
-            case R.id.mnu_Empresa:
-                Intent newIntentemp=new Intent(this,Empresa.class);
-                newIntentemp.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(newIntentemp);
-            case R.id.mnu_Sede:
-                Intent newIntentse=new Intent(this,Sede.class);
-                newIntentse.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(newIntentse);
-            case R.id.mnu_asesor:
-                Intent newIntentas=new Intent(this,Asesor.class);
-                newIntentas.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(newIntentas);
-            case R.id.mnu_SedeHorario:
-                Intent newIntentash=new Intent(this,SedeHorario.class);
-                newIntentash.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(newIntentash);
-            case R.id.msnu_empresausuario:
-                Intent newIntentaeu=new Intent(this,SedeHorario.class);
-                newIntentaeu.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(newIntentaeu);
-            case R.id.mnu_CitaBuscar:
-                Intent newIntentacb=new Intent(this,CitaBuscar.class);
-                newIntentacb.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(newIntentacb);
-            case R.id.mnu_Cita:
-                Intent newIntentac=new Intent(this,Cita.class);
-                newIntentac.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(newIntentac);
-            case R.id.mnu_Historia:
-                Intent newIntenth=new Intent(this,Historia.class);
-                newIntenth.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(newIntenth);
+            Intent newIntent=new Intent(this,SedeHorario.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+
+        }        else if(id == R.id.mnu_asesor)
+        {
+            Intent newIntent=new Intent(this,Asesor.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+
+        } else if(id == R.id.mnu_Empresa)
+        {
+            Intent newIntent=new Intent(this,Empresa.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+
+        }else if(id == R.id.mnu_MaestroCita)
+        {
+            Intent newIntent=new Intent(this,MaestroCita.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+
+        } else if(id == R.id.mnu_MarcaModelo)
+        {
+            Intent newIntent=new Intent(this,MarcaModelo.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+
+        } else if(id == R.id.mnu_Vehiculo)
+        {
+            Intent newIntent=new Intent(this,Vehiculo.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+
+        } else if(id == R.id.mnu_MaestroCita)
+        {
+            Intent newIntent=new Intent(this,MaestroCita.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+
+        } else if(id == R.id.mnu_Cita)
+        {
+            Intent newIntent=new Intent(this,Cita.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+
+        }else if(id == R.id.mnu_CitaBuscar)
+        {
+            Intent newIntent=new Intent(this,CitaBuscar.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+
+        }else if(id == R.id.mnu_Historia)
+        {
+            Intent newIntent=new Intent(this,Historia.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+
+        }else if(id == R.id.mnu_empresausuario)
+        {
+            Intent newIntent=new Intent(this,EmpresaUsuario.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
 
         }
-*/
+
+
+
+
+
         return super.onOptionsItemSelected(menuItem);
     }
 

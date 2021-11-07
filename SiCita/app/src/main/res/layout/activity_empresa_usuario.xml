@@ -6,4 +6,175 @@
     android:layout_height="match_parent"
     tools:context=".EmpresaUsuario">
 
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/actualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="54dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/Cita"
+        app:layout_constraintEnd_toStartOf="@+id/imageView13"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_rojo_blanco" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="167dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/LoginUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_carempresa" />
+
+    <EditText
+        android:id="@+id/nit10"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Identificacion"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <EditText
+        android:id="@+id/nombre16"
+        android:layout_width="351dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Nombre"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/nit10"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="366dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre16">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="224dp"
+            android:scrollbars="vertical"
+            android:showDividers="middle|beginning|end|none">
+
+
+            <TextView
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="14dip"
+                android:text="@string/Empresa"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <!-- second element of the row that is shown in the screenshot-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="14dip"
+                android:text="@string/selec"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="14dip"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <!-- second element of the row that is shown in the screenshot-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="14dip"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="14dip"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <!-- second element of the row that is shown in the screenshot-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="14dip"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="18dip"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <!-- second element of the row that is shown in the screenshot-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="18dip"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+
+        </TableRow>
+    </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

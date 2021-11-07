@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SiCita">
         <activity
+            android:name=".Splash2"
+            android:exported="false" />
+
+        <activity
             android:name=".Principal"
             android:exported="false" />
         <activity

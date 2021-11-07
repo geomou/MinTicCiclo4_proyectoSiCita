@@ -8,6 +8,7 @@
 
     <string name="actualizar">Actualizar</string>
     <string name="borrar">Borrar</string>
+    <string name="buscar">Buscar</string>
 
     <string name="idempresa">Id Empresa</string>
     <string name="emp">Empresa</string>
@@ -19,6 +20,27 @@
     <string name="express">Servicio Express</string>
     <string name="lavado">Lavado</string>
     <string name="RTM">RTM</string>
+
+    <string name="MG">Mecanica General</string>
+    <string name="P">Pintura</string>
+    <string name="L">Latoneria</string>
+    <string name="EE">Electico Especializado</string>
+    <string name="ET">Electronico Especializado</string>
+
+
+    <string name="razon">Razon Social</string>
+    <string name="direccion">Dirección</string>
+    <string name="tel2">Telefono 2</string>
+    <string name="contacto">Contacto</string>
+    <string name="url">Url API</string>
+    <string name="token">Token</string>
+    <string name="activo">Activo</string>
+
+    <string name="marca">Marca</string>
+    <string name="desmarca">Descripción Marca</string>
+
+    <string name="modelo">Modelo</string>
+    <string name="desmodelo">Descripción Modelo</string>
 
 
 
@@ -52,5 +74,8 @@
     <string name="email">Email</string>
     <string name="chkadmin">Es Admin</string>
     <string name="chkasesor">Es Asesor</string>
+
+    <string name="selec">Selección</string>
+
 
 </resources>
