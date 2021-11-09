@@ -18,6 +18,7 @@ app.use(express.urlencoded({
 app.use("/api/", rutasusuarios.routes);
 
 
+
 app.get("/api/Conectar", (req, res) => {
   return res.status(200).send("Conectado SICITA");
 });
