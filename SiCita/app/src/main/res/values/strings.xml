@@ -76,6 +76,44 @@
     <string name="chkasesor">Es Asesor</string>
 
     <string name="selec">Selección</string>
+    <string name="horarios">Descripción Horario</string>
+    <string name="lunes">Lunes</string>
+    <string name="martes">Martes</string>
+    <string name="miercoles">Miercoles</string>
+    <string name="jueves">Jueves</string>
+    <string name="viernes">Viernes</string>
+    <string name="sabado">Sabado</string>
+    <string name="domingo">Domingo</string>
+
+    <string-array name="horas">
+        <item>07:00 a.m.</item>
+        <item>08:00 a.m.</item>
+        <item>09:00 a.m.</item>
+        <item>10:00 a.m.</item>
+        <item>11:00 a.m.</item>
+        <item>12:00 m.d.</item>
+        <item>01:00 p.m.</item>
+        <item>02:00 p.m.</item>
+        <item>03:00 p.m.</item>
+        <item>04:00 p.m.</item>
+        <item>05:00 p.m.</item>
+        <item>06:00 p.m.</item>
+        <item>07:00 p.m.</item>
+     </string-array>
+    <string name="Nodis">No Disponible</string>
+    <string name="dia">Día</string>
+    <string name="hi">Hora Inicio</string>
+    <string name="hf">Hora Fin</string>
+    <string name="dis">Dispo</string>
+    <string name="tipocita">Tipo de Cita</string>
+
+
+
+
+
+
+
+
 
 
 </resources>

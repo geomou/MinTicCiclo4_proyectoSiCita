@@ -7,10 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".Splash">
 
-    <VideoView
-        android:id="@+id/videoView"
-        android:layout_width="402dp"
-        android:layout_height="544dp"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="105dp" />
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_base_car"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="50dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

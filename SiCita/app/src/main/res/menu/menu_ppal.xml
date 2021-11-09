@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
     <item
         android:id="@+id/mnu_empresausuario"
-        android:title="@string/EmpresaUsuario" />
+        android:title="@string/EmpresaUsuario"
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Small" />
     <item
         android:id="@+id/mnu_LoginAdmin"
-        android:title="@string/LoginAdmin" />
+        android:title="@string/LoginAdmin"
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Small" />
     <item
         android:id="@+id/mnu_LoginUsuario"
-        android:title="@string/LoginUsuario" />
+        android:title="@string/LoginUsuario"
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Small" />
     <item
         android:id="@+id/mnu_MaestroCita"
-        android:title="@string/MaestroCita" />
+        android:title="@string/MaestroCita"
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Small" />
     <item
         android:id="@+id/mnu_MarcaModelo"
-        android:title="@string/MarcaModelo" />
+        android:title="@string/MarcaModelo"
+        app:itemTextAppearance="@style/MenuItems"/>
     <item
         android:id="@+id/mnu_Sede"
         android:title="@string/Sede" />
