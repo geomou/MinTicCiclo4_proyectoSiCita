@@ -4,51 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
+    android:paddingLeft="10dp"
     tools:context=".Asesor">
 
     <Switch
         android:id="@+id/switch6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/ET"
-        app:layout_constraintTop_toBottomOf="@+id/switch5"
-        tools:layout_editor_absoluteX="61dp" />
+        android:hint="@string/ET"
+        android:layoutDirection="rtl"
+        app:layout_constraintEnd_toEndOf="@+id/switch5"
+        app:layout_constraintTop_toBottomOf="@+id/switch5" />
 
     <Switch
         android:id="@+id/switch7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/P"
-        app:layout_constraintStart_toStartOf="@+id/switch9"
+        android:hint="@string/P"
+        android:layoutDirection="rtl"
+        app:layout_constraintEnd_toEndOf="@+id/switch8"
         app:layout_constraintTop_toBottomOf="@+id/switch8" />
 
     <Switch
         android:id="@+id/switch9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/L"
-        app:layout_constraintStart_toStartOf="@+id/switch5"
+        android:hint="@string/L"
+        android:layoutDirection="rtl"
+        app:layout_constraintEnd_toEndOf="@+id/switch7"
         app:layout_constraintTop_toBottomOf="@+id/switch7" />
 
     <Switch
         android:id="@+id/switch8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/MG"
-        app:layout_constraintStart_toStartOf="@+id/switch7"
+        android:hint="@string/MG"
+        android:layoutDirection="rtl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mail3" />
 
     <Switch
         android:id="@+id/switch5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/EE"
-        app:layout_constraintStart_toStartOf="@+id/switch6"
+        android:hint="@string/EE"
+        android:layoutDirection="rtl"
+        app:layout_constraintEnd_toEndOf="@+id/switch9"
         app:layout_constraintTop_toBottomOf="@+id/switch9" />
 
     <EditText
@@ -56,41 +60,27 @@
         android:layout_width="242dp"
         android:layout_height="35dp"
         android:ems="10"
+        android:hint="@string/Identificacion"
         android:inputType="textPersonName"
-        android:text="@string/Identificacion"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintHorizontal_bias="0.248"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <EditText
-        android:id="@+id/nombre7"
+        android:id="@+id/nombre8"
         android:layout_width="351dp"
         android:layout_height="35dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
+        android:hint="@string/tel1"
         android:inputType="textPersonName"
-        android:text="@string/movil"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre8" />
-
-    <EditText
-        android:id="@+id/nombre9"
-        android:layout_width="351dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/Nombre"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nit9" />
+        app:layout_constraintTop_toBottomOf="@+id/nombre9" />
 
     <EditText
         android:id="@+id/mail3"
@@ -98,13 +88,41 @@
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
-        android:text="@string/email"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombre7" />
+
+    <EditText
+        android:id="@+id/nombre9"
+        android:layout_width="351dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/Nombre"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nit9" />
+
+    <EditText
+        android:id="@+id/nombre7"
+        android:layout_width="351dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/movil"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre8" />
 
     <Button
         android:id="@+id/button8"
@@ -127,20 +145,6 @@
         app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button8" />
-
-    <EditText
-        android:id="@+id/nombre8"
-        android:layout_width="351dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/tel1"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre9" />
 
     <ImageView
         android:id="@+id/imageView8"

@@ -176,8 +176,8 @@
             android:layout_marginStart="48dp"
             android:layout_marginTop="8dp"
             android:ems="10"
+            android:hint="@string/tipocita"
             android:inputType="textPersonName"
-            android:text="@string/tipocita"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nombre22" />
@@ -188,8 +188,8 @@
             android:layout_height="35dp"
             android:layout_marginTop="56dp"
             android:ems="10"
+            android:hint="@string/idempresa"
             android:inputType="textPersonName"
-            android:text="@string/idempresa"
             android:textSize="14sp"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="22dp" />
@@ -199,8 +199,8 @@
             android:layout_width="324dp"
             android:layout_height="35dp"
             android:ems="10"
+            android:hint="@string/razon"
             android:inputType="textPersonName"
-            android:text="@string/razon"
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@+id/nombre21"
             tools:layout_editor_absoluteX="43dp" />
