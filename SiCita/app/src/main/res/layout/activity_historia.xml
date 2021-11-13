@@ -6,4 +6,231 @@
     android:layout_height="match_parent"
     tools:context=".Historia">
 
+    <ScrollView
+        android:layout_width="351dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView23">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tableLayout3"
+                android:layout_width="323dp"
+                android:layout_height="139dp">
+
+                <TableRow
+                    android:layout_width="421dp"
+                    android:layout_height="224dp"
+                    android:scrollbars="vertical"
+                    android:showDividers="middle|beginning|end|none">
+
+
+                    <TextView
+                        android:layout_width="61dp"
+                        android:layout_height="wrap_content"
+                        android:background="#b0b0b0"
+                        android:padding="8dip"
+                        android:text="@string/placa"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:background="#b0b0b0"
+                        android:padding="8dip"
+                        android:text="@string/Empresa"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:background="#b0b0b0"
+                        android:padding="8dip"
+                        android:text="@string/Sede"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="61dp"
+                        android:layout_height="wrap_content"
+                        android:background="#b0b0b0"
+                        android:padding="8dip"
+                        android:text="@string/fecha"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="61dp"
+                        android:layout_height="wrap_content"
+                        android:background="#b0b0b0"
+                        android:padding="8dip"
+                        android:text="@string/seleccionar"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_car" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="57dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="235dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_rojo_blanco" />
 </androidx.constraintlayout.widget.ConstraintLayout>
