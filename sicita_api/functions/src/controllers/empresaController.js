@@ -1,5 +1,5 @@
 const db = require("../configdb/config");
-const Usuario = require("../models/Empresa");
+const Empresa = require("../models/Empresa");
 
 const getTodosEmpresa = async (req, res, next) => {
     try {
@@ -87,10 +87,10 @@ const delEmpresa = async (req, res) => {
     }
 }
 module.exports = {
-    getTodosUsuarios,
-    addUsuario,
-    getUsuario,
-    updateUsuario,
-    delusuario
+    getTodosEmpresa,
+    addEmpresa,
+    getEmpresa,
+    updateEmpresa,
+    delEmpresa
 
 }
