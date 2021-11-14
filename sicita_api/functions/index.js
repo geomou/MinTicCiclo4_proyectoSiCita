@@ -6,7 +6,6 @@ const app = express();
 app.use(cors({
   origin: true
 }));
-const rutasusuarios = require('./src/routes/usuarios-routes');
 
 app.use(morgan("tiny"));
 app.use(cors());
@@ -15,7 +14,30 @@ app.use(express.urlencoded({
   extend: true
 }));
 
+const rutasusuarios = require('./src/routes/usuarios-routes');
+const rutaasesores = require('./src/routes/asesor-routes');
+const rutacanalcita = require('./src/routes/canalcita-routes');
+const rutacita = require('./src/routes/cita-routes');
+const rutaempresa = require('./src/routes/empresa-routes');
+const rutahorariodetalle = require('./src/routes/horariodetalle-routes');
+const rutahorarioencabezado = require('./src/routes/horarioencabezado-routes');
+const rutamarcamodelo = require('./src/routes/marcamodeo-routes');
+const rutatipocita = require('./src/routes/tipocita-routes');
+const rutausuarioempresa = require('./src/routes/usuarioempresa-routes');
+const rutavehiculo = require('./src/routes/vehiculo-routes');
+
+
 app.use("/api/", rutasusuarios.routes);
+app.use("/api/", rutaasesores.routes);
+app.use("/api/", rutacanalcita.routes);
+app.use("/api/", rutacita.routes);
+app.use("/api/", rutaempresa.routes);
+app.use("/api/", rutahorariodetalle.routes);
+app.use("/api/", rutahorarioencabezado.routes);
+app.use("/api/", rutamarcamodelo.routes);
+app.use("/api/", rutatipocita.routes);
+app.use("/api/", rutausuarioempresa.routes);
+app.use("/api/", rutavehiculo.routes);
 
 
 

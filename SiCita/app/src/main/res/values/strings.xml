@@ -45,12 +45,19 @@
     <string name="detalleveh">Descripción Vehículo</string>
     <string name="añoveh">Año</string>
     <string name="fecha">Fecha</string>
+    <string name="hora">Hora</string>
+    <string name="buscarfecha">Buscar por fecha</string>
+    <string name="buscarsede">Buscar por cita</string>
+
     <string name="seleccionar">Sel</string>
+    <string name="solicitud">Enviar solicitud cancelación</string>
+    <string name="crearcita">Crear Cita</string>
 
-
-
-
-
+    <string name="canalcita">Canal Cita</string>
+    <string name="observaciones">Observaciones</string>
+    <string name="transporte">Requiere Transporte</string>
+    <string name="tiempo">Tiempo Final Estimado</string>
+    <string name="correo">Enviar Correo</string>
 
 
     <string name="login_name">Logueo</string>
