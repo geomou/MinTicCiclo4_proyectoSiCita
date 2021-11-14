@@ -8,55 +8,72 @@
     android:paddingLeft="10dp"
     tools:context=".Asesor">
 
+    <EditText
+        android:id="@+id/idtxtid"
+        android:layout_width="183dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        android:theme="@style/fontssicita"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Switch
-        android:id="@+id/switch6"
+        android:id="@+id/idswelectrogeneral"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/ET"
         android:layoutDirection="rtl"
-        app:layout_constraintEnd_toEndOf="@+id/switch5"
-        app:layout_constraintTop_toBottomOf="@+id/switch5" />
+        app:layout_constraintEnd_toEndOf="@+id/idswelectroespecial"
+        app:layout_constraintTop_toBottomOf="@+id/idswelectroespecial" />
 
     <Switch
-        android:id="@+id/switch7"
+        android:id="@+id/idswpintura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/P"
         android:layoutDirection="rtl"
-        app:layout_constraintEnd_toEndOf="@+id/switch8"
-        app:layout_constraintTop_toBottomOf="@+id/switch8" />
+        app:layout_constraintEnd_toEndOf="@+id/idswmg"
+        app:layout_constraintTop_toBottomOf="@+id/idswmg" />
 
     <Switch
-        android:id="@+id/switch9"
+        android:id="@+id/idswlatoneria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/L"
         android:layoutDirection="rtl"
-        app:layout_constraintEnd_toEndOf="@+id/switch7"
-        app:layout_constraintTop_toBottomOf="@+id/switch7" />
+        app:layout_constraintEnd_toEndOf="@+id/idswpintura"
+        app:layout_constraintTop_toBottomOf="@+id/idswpintura" />
 
     <Switch
-        android:id="@+id/switch8"
+        android:id="@+id/idswmg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/MG"
         android:layoutDirection="rtl"
+        android:onClick="Actualizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.88"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mail3" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtemail" />
 
     <Switch
-        android:id="@+id/switch5"
+        android:id="@+id/idswelectroespecial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/EE"
         android:layoutDirection="rtl"
-        app:layout_constraintEnd_toEndOf="@+id/switch9"
-        app:layout_constraintTop_toBottomOf="@+id/switch9" />
+        app:layout_constraintEnd_toEndOf="@+id/idswlatoneria"
+        app:layout_constraintTop_toBottomOf="@+id/idswlatoneria" />
 
     <EditText
-        android:id="@+id/nit9"
+        android:id="@+id/idtxtidentificacion"
         android:layout_width="242dp"
         android:layout_height="35dp"
         android:ems="10"
@@ -69,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <EditText
-        android:id="@+id/nombre8"
+        android:id="@+id/iditxttelefono"
         android:layout_width="351dp"
         android:layout_height="35dp"
         android:layout_marginTop="12dp"
@@ -80,10 +97,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre9" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtnombre" />
 
     <EditText
-        android:id="@+id/mail3"
+        android:id="@+id/idtxtemail"
         android:layout_width="351dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
@@ -94,10 +111,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre7" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtmovil" />
 
     <EditText
-        android:id="@+id/nombre9"
+        android:id="@+id/idtxtnombre"
         android:layout_width="351dp"
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
@@ -108,10 +125,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nit9" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtidentificacion" />
 
     <EditText
-        android:id="@+id/nombre7"
+        android:id="@+id/idtxtmovil"
         android:layout_width="351dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
@@ -122,21 +139,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre8" />
+        app:layout_constraintTop_toBottomOf="@+id/iditxttelefono" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/idbtnActualizar"
         android:layout_width="128dp"
         android:layout_height="40dp"
         android:layout_marginTop="12dp"
+        android:onClick="Actualizar"
         android:text="@string/actualizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mail3" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtemail" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/idbtnborrar"
         android:layout_width="128dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
@@ -144,7 +162,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/idbtnActualizar" />
 
     <ImageView
         android:id="@+id/imageView8"

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">SiCita</string>
+    <string name="id">ID</string>
+
 
     <string name="usuario">Usuario</string>
     <string name="clave">Clave</string>
@@ -24,8 +26,8 @@
     <string name="MG">Mecanica General</string>
     <string name="P">Pintura</string>
     <string name="L">Latoneria</string>
-    <string name="EE">Electico Especializado</string>
-    <string name="ET">Electronico Especializado</string>
+    <string name="EE">Electronico Especializado</string>
+    <string name="ET">Electronico General</string>
 
 
     <string name="razon">Razon Social</string>

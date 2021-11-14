@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/logo_base_car" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/idtxtemailusuairo"
         android:layout_width="348dp"
         android:layout_height="48dp"
         android:layout_marginTop="40dp"
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/idtxtclave"
         android:layout_width="348dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtemailusuairo" />
 
     <Button
         android:id="@+id/idbtningresar"
@@ -53,14 +53,14 @@
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@color/red_200"
-        android:onClick="goToActivity"
+        android:onClick="ingresar"
         android:text="Ingresar"
         android:textStyle="bold"
         app:cornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtclave" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"

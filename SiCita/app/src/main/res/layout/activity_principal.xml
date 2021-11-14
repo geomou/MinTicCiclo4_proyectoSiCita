@@ -15,7 +15,7 @@
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+        app:layout_constraintTop_toBottomOf="@+id/imbsede"
         app:srcCompat="@drawable/logo_tecnico" />
 
     <ImageButton
@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.318"
         app:layout_constraintStart_toEndOf="@+id/imageButton9"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+        app:layout_constraintTop_toBottomOf="@+id/imbsede"
         app:srcCompat="@drawable/logo_sede" />
 
     <ImageButton
@@ -57,7 +57,7 @@
         app:srcCompat="@drawable/reporte_rojo" />
 
     <ImageButton
-        android:id="@+id/imageButton12"
+        android:id="@+id/imbEmpresa"
         android:layout_width="186dp"
         android:layout_height="77dp"
         android:layout_marginTop="16dp"
@@ -71,7 +71,7 @@
         app:srcCompat="@drawable/logo_carempresa" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/imbsede"
         android:layout_width="186dp"
         android:layout_height="77dp"
         android:layout_marginTop="12dp"
@@ -80,6 +80,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton12"
+        app:layout_constraintTop_toBottomOf="@+id/imbEmpresa"
         app:srcCompat="@drawable/logo_car" />
 </androidx.constraintlayout.widget.ConstraintLayout>
