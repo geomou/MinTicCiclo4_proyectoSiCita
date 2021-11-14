@@ -1,9 +1,9 @@
 const db = require("../configdb/config");
-const marcamodelo = require("../models/marca");
+const MarcaModelo = require("../models/marca");
 
 const getTodosMarcaModelo = async (req, res, next) => {
     try {
-        const marcamodelos = await db.collection('MarcaModelo');
+        const marcamodelos = await db.collection('marca');
         const datos = await marcamodelos.get();
 
         const listadomarcasmodelos = [];
@@ -17,11 +17,11 @@ const getTodosMarcaModelo = async (req, res, next) => {
                     doc.id,
                    doc.data().codigo,
                    doc.data().descripcion,
-                   doc.data().es_mawrca,
+                   doc.data().es_marca,
                    doc.data().id_marcamodelo,
 
                 );
-                listadousuarios.push(marcamodelo)
+                listadomarcasmodelos.push(marcamodelo)
 
             });
             res.send(listadomarcasmodelos);

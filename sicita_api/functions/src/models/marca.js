@@ -1,5 +1,5 @@
 class MarcaModelo{
-    constructor(id,codigo,descripcion,estado,id_marcamodelo)
+    constructor(id,codigo,descripcion,es_marca,id_marcamodelo)
     {
         this.id=id;
         this.codigo=codigo;
