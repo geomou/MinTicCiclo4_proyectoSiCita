@@ -9,5 +9,5 @@ class Asesor{
         this.email = email;
         this.idsede = idsede;
     }
-}
+} 
 module.exports = Asesor;
