@@ -6,14 +6,53 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TableLayout;
+import android.widget.Toast;
 
 public class EmpresaUsuario extends AppCompatActivity {
+    private EditText txtidentificacion ;EditText txtidusuario;EditText txtnombres;
+    TableLayout tblusuarioempresa;
+    Button btnactualizar;Button btnborrar;
+    String id;String identificacion;String nombres;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_empresa_usuario);
+        txtidusuario=(EditText) findViewById(R.id.idtxtidusuario);
+        txtidentificacion=(EditText) findViewById(R.id.idtxtidentificacionbu);
+        txtnombres=(EditText) findViewById(R.id.idtxtnombreu);
+
     }
+
+    public void Actualizar(View view){
+        id=txtidusuario.getText().toString();
+        identificacion=txtidentificacion.getText().toString();
+        nombres=txtnombres.getText().toString();
+        if (id.equals(""))
+        {
+            Toast.makeText(this, "No es posible almacenar , debe de cargar un usuario existente " , Toast.LENGTH_SHORT).show();
+        }
+
+    }
+    public void Borrar(View view)
+    {
+        id=txtidusuario.getText().toString();
+        if (id.equals(""))
+        {
+            Toast.makeText(this, "No es posible Eliminar , debe de cargar un usuario existente " , Toast.LENGTH_SHORT).show();
+            txtidentificacion.requestFocus();
+        }
+
+    }
+
+
+
+
     @Override
     public  boolean onCreateOptionsMenu(Menu menu)
     {
@@ -46,7 +85,7 @@ public class EmpresaUsuario extends AppCompatActivity {
 
         } else if(id == R.id.mnu_SedeHorario)
         {
-            Intent newIntent=new Intent(this,SedeHorario.class);
+            Intent newIntent=new Intent(this,Horarios.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 

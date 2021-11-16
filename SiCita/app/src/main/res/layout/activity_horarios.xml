@@ -6,4 +6,453 @@
     android:layout_height="match_parent"
     tools:context=".Horarios">
 
+    <Button
+        android:id="@+id/idbtnborrarhorario"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="Borrar"
+        android:text="@string/borrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idbtnactualizarhorario" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="441dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idchknodisponible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/idtblhorarios"
+                android:layout_width="358dp"
+                android:layout_height="139dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="224dp"
+                    android:scrollbars="vertical"
+                    android:showDividers="middle|beginning|end|none">
+
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="#b0b0b0"
+                        android:padding="8dip"
+                        android:text="@string/dia"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <!-- second element of the row that is shown in the screenshot-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#b0b0b0"
+                        android:padding="8dip"
+                        android:text="@string/hi"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#b0b0b0"
+                        android:padding="8dip"
+                        android:text="@string/hf"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#b0b0b0"
+                        android:padding="8dip"
+                        android:text="@string/dis"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="14dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="18dip"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="339dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idsphorarios">
+
+        <CheckBox
+            android:id="@+id/idchklunes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lunes"
+            android:theme="@style/fontssicita" />
+
+        <CheckBox
+            android:id="@+id/idchkmartes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/martes"
+            android:theme="@style/fontssicita" />
+
+        <CheckBox
+            android:id="@+id/idchkmiercoles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/miercoles"
+            android:theme="@style/fontssicita" />
+
+        <CheckBox
+            android:id="@+id/idchkjueves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/jueves"
+            android:theme="@style/fontssicita" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="341dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <CheckBox
+            android:id="@+id/idchkviernes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/viernes"
+            android:theme="@style/fontssicita" />
+
+        <CheckBox
+            android:id="@+id/idchksabado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sabado"
+            android:theme="@style/fontssicita" />
+
+        <CheckBox
+            android:id="@+id/idchkdomingo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/domingo"
+            android:theme="@style/fontssicita" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/idtxvdellinhorario"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="142dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idtxvaddlinhorario"
+        app:layout_constraintTop_toBottomOf="@+id/idspnhorafin"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/idtxvaddlinhorario"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/idchknodisponible"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <EditText
+        android:id="@+id/idtxtdesriphorario"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/horarios"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idtxtxnombresedehorario" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="54dp"
+        android:layout_height="56dp"
+        android:contentDescription="@string/Cita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_rojo_blanco" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:contentDescription="@string/LoginUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_sede" />
+
+    <EditText
+        android:id="@+id/idtxtidsedehorario"
+        android:layout_width="225dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/codsede"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idtxtxnombresedehorario"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="26dp"
+        android:ems="10"
+        android:hint="@string/nombresede"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idtxtidsedehorario" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toEndOf="@+id/idtxtidsedehorario"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <Button
+        android:id="@+id/idbtnactualizarhorario"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="Actualizar"
+        android:text="@string/actualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView4" />
+
+    <CheckBox
+        android:id="@+id/idchknodisponible"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Nodis"
+        android:textSize="10sp"
+        android:theme="@style/fontssicita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="Hora Final"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/idspnhoraini"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="10dp"
+        android:text="Hora Inicial"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Spinner
+        android:id="@+id/idspnhoraini"
+        android:layout_width="78dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/spinner_selector"
+        android:entries="@array/horas"
+        android:theme="@style/fontssicita"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Spinner
+        android:id="@+id/idsphorarios"
+        android:layout_width="324dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="44dp"
+        android:background="@drawable/spinner_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idtxtdesriphorario" />
+
+    <Spinner
+        android:id="@+id/idspnhorafin"
+        android:layout_width="78dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/spinner_selector"
+        android:entries="@array/horas"
+        android:theme="@style/fontssicita"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

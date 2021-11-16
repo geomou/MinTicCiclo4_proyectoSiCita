@@ -6,8 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".Sede">
 
+    <TextView
+        android:id="@+id/idtxvlatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/idtxvlongitud" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="129dp"
+        android:text="@string/lat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idswrtm"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <EditText
+        android:id="@+id/idtxtidsede"
+        android:layout_width="183dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="46dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        android:theme="@style/fontssicita"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Switch
-        android:id="@+id/switch4"
+        android:id="@+id/idswrtm"
         android:layout_width="156dp"
         android:layout_height="26dp"
         android:layoutDirection="rtl"
@@ -15,52 +54,56 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.831"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch3" />
+        app:layout_constraintTop_toBottomOf="@+id/idswlav" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/idbtnactsede"
         android:layout_width="128dp"
         android:layout_height="42dp"
+        android:layout_marginTop="14dp"
+        android:onClick="Actualizar"
         android:text="@string/actualizar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nit7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/idbtnborrarsede"
         android:layout_width="128dp"
         android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:onClick="Borrar"
         android:text="@string/borrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/idbtnactsede" />
 
     <EditText
-        android:id="@+id/nit7"
-        android:layout_width="351dp"
+        android:id="@+id/idtxtdireccionsede"
+        android:layout_width="300dp"
         android:layout_height="35dp"
         android:ems="10"
         android:hint="@string/dirsede"
         android:inputType="textPersonName"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/nit6"
-        app:layout_constraintTop_toBottomOf="@+id/nit6" />
+        app:layout_constraintStart_toStartOf="@+id/idtxtnombresede"
+        app:layout_constraintTop_toBottomOf="@+id/idtxtnombresede" />
 
     <EditText
-        android:id="@+id/nit4"
-        android:layout_width="351dp"
+        android:id="@+id/idtxtempresasede"
+        android:layout_width="300dp"
         android:layout_height="36dp"
         android:ems="10"
         android:hint="@string/emp"
         android:inputType="textPersonName"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/nit3"
-        app:layout_constraintTop_toBottomOf="@+id/nit3" />
+        app:layout_constraintStart_toStartOf="@+id/idtxtidempresasede"
+        app:layout_constraintTop_toBottomOf="@+id/idtxtidempresasede" />
 
     <EditText
-        android:id="@+id/nit3"
+        android:id="@+id/idtxtidempresasede"
         android:layout_width="225dp"
         android:layout_height="35dp"
         android:layout_marginStart="44dp"
@@ -73,26 +116,20 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <EditText
-        android:id="@+id/nit5"
-        android:layout_width="225dp"
+        android:id="@+id/idtxtnombresede"
+        android:layout_width="300dp"
         android:layout_height="35dp"
-        android:ems="10"
-        android:hint="@string/codsede"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/nit4"
-        app:layout_constraintTop_toBottomOf="@+id/nit4" />
-
-    <EditText
-        android:id="@+id/nit6"
-        android:layout_width="351dp"
-        android:layout_height="35dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="@string/nombresede"
         android:inputType="textPersonName"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/nit5"
-        app:layout_constraintTop_toBottomOf="@+id/nit5" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idtxtempresasede" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -121,7 +158,7 @@
         app:srcCompat="@drawable/logo_sede" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/idswmanto"
         android:layout_width="148dp"
         android:layout_height="26dp"
         android:layout_marginTop="12dp"
@@ -130,10 +167,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.836"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nit7" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtdireccionsede" />
 
     <Switch
-        android:id="@+id/switch2"
+        android:id="@+id/idswse"
         android:layout_width="161dp"
         android:layout_height="26dp"
         android:layout_marginTop="2dp"
@@ -142,10 +179,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.832"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintTop_toBottomOf="@+id/idswmanto" />
 
     <Switch
-        android:id="@+id/switch3"
+        android:id="@+id/idswlav"
         android:layout_width="156dp"
         android:layout_height="26dp"
         android:layoutDirection="rtl"
@@ -153,13 +190,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.831"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+        app:layout_constraintTop_toBottomOf="@+id/idswse" />
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
-        android:layout_width="350dp"
-        android:layout_height="183dp"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="383dp" />
+        android:layout_width="149dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idswse"
+        app:layout_constraintTop_toBottomOf="@+id/idtxtdireccionsede" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/lon"
+        app:layout_constraintStart_toEndOf="@+id/idswrtm"
+        app:layout_constraintTop_toBottomOf="@+id/mapView" />
+
+    <TextView
+        android:id="@+id/idtxvlongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/mapView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

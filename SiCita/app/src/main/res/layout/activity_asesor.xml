@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/ET"
         android:layoutDirection="rtl"
+        android:theme="@style/fontssicita"
         app:layout_constraintEnd_toEndOf="@+id/idswelectroespecial"
         app:layout_constraintTop_toBottomOf="@+id/idswelectroespecial" />
 
@@ -39,6 +40,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/P"
         android:layoutDirection="rtl"
+        android:theme="@style/fontssicita"
         app:layout_constraintEnd_toEndOf="@+id/idswmg"
         app:layout_constraintTop_toBottomOf="@+id/idswmg" />
 
@@ -48,6 +50,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/L"
         android:layoutDirection="rtl"
+        android:theme="@style/fontssicita"
         app:layout_constraintEnd_toEndOf="@+id/idswpintura"
         app:layout_constraintTop_toBottomOf="@+id/idswpintura" />
 
@@ -58,6 +61,7 @@
         android:hint="@string/MG"
         android:layoutDirection="rtl"
         android:onClick="Actualizar"
+        android:theme="@style/fontssicita"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.88"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,6 +73,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/EE"
         android:layoutDirection="rtl"
+        android:theme="@style/fontssicita"
         app:layout_constraintEnd_toEndOf="@+id/idswlatoneria"
         app:layout_constraintTop_toBottomOf="@+id/idswlatoneria" />
 
@@ -87,7 +92,7 @@
 
     <EditText
         android:id="@+id/iditxttelefono"
-        android:layout_width="351dp"
+        android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_marginTop="12dp"
         android:ems="10"
@@ -101,7 +106,7 @@
 
     <EditText
         android:id="@+id/idtxtemail"
-        android:layout_width="351dp"
+        android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:ems="10"
@@ -115,7 +120,7 @@
 
     <EditText
         android:id="@+id/idtxtnombre"
-        android:layout_width="351dp"
+        android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
         android:ems="10"
@@ -129,7 +134,7 @@
 
     <EditText
         android:id="@+id/idtxtmovil"
-        android:layout_width="351dp"
+        android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:ems="10"

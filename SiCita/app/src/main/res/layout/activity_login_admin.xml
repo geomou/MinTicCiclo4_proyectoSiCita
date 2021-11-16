@@ -7,8 +7,24 @@
     tools:context=".LoginAdmin">
 
     <EditText
-        android:id="@+id/nombre3"
-        android:layout_width="351dp"
+        android:id="@+id/idtxtidamin"
+        android:layout_width="183dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="61dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        android:theme="@style/fontssicita"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idtxtmoviladmin"
+        android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:ems="10"
@@ -16,9 +32,8 @@
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre2" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtteladmin" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -43,22 +58,22 @@
         app:srcCompat="@drawable/logo_usuario" />
 
     <EditText
-        android:id="@+id/nit"
-        android:layout_width="291dp"
+        android:id="@+id/idtxtnitadmin"
+        android:layout_width="300dp"
         android:layout_height="41dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="@string/Identificacion"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/nombre"
-        android:layout_width="351dp"
+        android:id="@+id/idtxtnombreadmin"
+        android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:ems="10"
@@ -66,13 +81,12 @@
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nit" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtnitadmin" />
 
     <EditText
-        android:id="@+id/nombre2"
-        android:layout_width="351dp"
+        android:id="@+id/idtxtteladmin"
+        android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:ems="10"
@@ -81,11 +95,11 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtnombreadmin" />
 
     <EditText
-        android:id="@+id/mail"
-        android:layout_width="351dp"
+        android:id="@+id/idtxtemailadmin"
+        android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_marginTop="4dp"
         android:ems="10"
@@ -94,26 +108,28 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre3" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtmoviladmin" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/idchkesadmin"
         android:layout_width="115dp"
         android:layout_height="35dp"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="8dp"
         android:text="@string/chkadmin"
+        android:theme="@style/fontssicita"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mail" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtemailadmin" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/idchkesasesor"
         android:layout_width="115dp"
         android:layout_height="35dp"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="56dp"
         android:text="@string/chkasesor"
+        android:theme="@style/fontssicita"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/idchkesadmin" />
 
     <TableLayout
         android:id="@+id/tableLayout"
@@ -124,7 +140,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.697"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/idbtnborraradmin"
         app:layout_constraintVertical_bias="0.0">
 
         <TableRow
@@ -149,23 +165,25 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/idbtnactualizaradmin"
         android:layout_width="128dp"
         android:layout_height="42dp"
         android:layout_marginEnd="28dp"
+        android:onClick="Actualizar"
         android:text="@string/actualizar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mail" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtemailadmin" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/idbtnborraradmin"
         android:layout_width="128dp"
         android:layout_height="42dp"
         android:layout_marginEnd="28dp"
+        android:onClick="Borrar"
         android:text="@string/borrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/checkBox4"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/idchkesasesor"
+        app:layout_constraintTop_toBottomOf="@+id/idbtnactualizaradmin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

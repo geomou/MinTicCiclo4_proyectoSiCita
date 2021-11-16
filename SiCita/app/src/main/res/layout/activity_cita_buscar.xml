@@ -8,88 +8,109 @@
     android:layout_height="match_parent"
     tools:context=".CitaBuscar">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="44dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/placa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Spinner
+        android:id="@+id/idsnpnplaca"
+        android:layout_width="240dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="86dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/idbtncrearcita"
         android:layout_width="128dp"
         android:layout_height="42dp"
         android:layout_marginStart="244dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="39dp"
+        android:onClick="Actualizar"
         android:text="@string/crearcita"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxvidsedebuscar" />
+
+    <Button
+        android:id="@+id/idbtnbuscarcita"
+        android:layout_width="68dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="25dp"
+        android:onClick="Buscar"
+        android:text="@string/CitaBuscar"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:hint="@string/Asesor"
-        android:text="@string/Sede"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="12dp"
+        android:id="@+id/idtxvplaca"
+        android:layout_width="53dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="1dp"
         android:text="@string/placa"
-        app:layout_constraintStart_toEndOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/idtxvidsedebuscar" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="44dp"
+        android:layout_height="18dp"
         android:layout_marginStart="48dp"
-        android:text="@string/hora"
+        android:text="@string/Sede"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="44dp"
+        android:layout_height="18dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/fecha"
+        android:text="@string/hora"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="44dp"
+        android:layout_height="18dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="8dp"
         android:text="@string/fecha"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+        app:layout_constraintTop_toBottomOf="@+id/idlvresultadobuscar" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:text="@string/Sede"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox13" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Spinner
-        android:id="@+id/snpsede"
+        android:id="@+id/idsnpsede"
         android:layout_width="281dp"
         android:layout_height="26dp"
         android:layout_marginStart="3dp"
-        android:layout_marginTop="4dp"
         android:layout_marginEnd="36dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox14" />
+        app:layout_constraintTop_toBottomOf="@+id/idspnempresa" />
 
     <ImageView
         android:id="@+id/imageView25"
@@ -103,353 +124,120 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="6dp"
         android:text="@string/Empresa"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView25" />
+        app:layout_constraintTop_toBottomOf="@+id/idchkbuscar" />
 
     <Spinner
-        android:id="@+id/spnempresa"
-        android:layout_width="281dp"
+        android:id="@+id/idspnempresa"
+        android:layout_width="240dp"
         android:layout_height="25dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idchkbuscar" />
+
+    <CheckBox
+        android:id="@+id/idchkbuscar"
+        android:layout_width="114dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/buscarfecha"
+        android:theme="@style/fontssicita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <CheckBox
+        android:id="@+id/idchkbuscarsede"
+        android:layout_width="110dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/buscarsede"
+        android:theme="@style/fontssicita"
+        app:layout_constraintStart_toEndOf="@+id/idchkbuscar"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <TextView
+        android:id="@+id/idtxvfecha"
+        android:layout_width="81dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/fecha"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/idlvresultadobuscar" />
+
+    <TextView
+        android:id="@+id/idtxvhora"
+        android:layout_width="81dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:hint="@string/hora"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/idtxvfecha" />
+
+    <TextView
+        android:id="@+id/idtxvidsedebuscar"
+        android:layout_width="200dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="112dp"
+        android:hint="@string/Sede"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/idtxvhora" />
 
-    <Spinner
-        android:id="@+id/spnempresa4"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="35dp"
+    <ListView
+        android:id="@+id/idlvresultadobuscar"
+        android:layout_width="329dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="34dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="347dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="40dp"
-        android2:layout_height="match_parent"
-        android2:layout_width="match_parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spnempresa"
-        tools2:context=".MainActivity">
+        app:layout_constraintTop_toBottomOf="@+id/idsnpsede" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="270dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="59dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idsnpnplaca">
 
         <EditText
             android:id="@+id/in_date"
-            android:layout_width="97dp"
+            android:layout_width="60dp"
             android:layout_height="36dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginTop="11dp"
             android:textSize="10sp" />
 
         <Button
             android:id="@+id/btn_date"
-            android:layout_width="75dp"
-            android:layout_height="35dp"
-            android:layout_alignBottom="@+id/in_date"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="-4dp"
-            android:layout_marginBottom="10dp"
-            android:layout_toEndOf="@+id/in_date"
-            android:layout_toRightOf="@+id/in_date"
+            android:layout_width="72dp"
+            android:layout_height="29dp"
             android:text="@string/fecha"
-            android:textSize="10sp" />
+            android:textSize="8sp" />
 
         <EditText
             android:id="@+id/in_time"
-            android:layout_width="69dp"
+            android:layout_width="50dp"
             android:layout_height="32dp"
-            android:layout_below="@+id/in_date"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="194dp"
-            android:layout_marginTop="-32dp"
             android:textSize="10sp" />
 
         <Button
             android:id="@+id/btn_time"
             android:layout_width="77dp"
-            android:layout_height="40dp"
-            android:layout_below="@+id/btn_date"
-            android:layout_alignLeft="@+id/btn_date"
-            android:layout_marginLeft="163dp"
-            android:layout_marginTop="-45dp"
+            android:layout_height="29dp"
             android:text="@string/hora"
-            android:textSize="10sp" />
-
-    </RelativeLayout>
-
-    <CheckBox
-        android:id="@+id/checkBox13"
-        android:layout_width="148dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="2dp"
-        android:text="@string/buscarfecha"
-        android:theme="@style/fontssicita"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
-
-    <CheckBox
-        android:id="@+id/checkBox14"
-        android:layout_width="159dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="2dp"
-        android:text="@string/buscarsede"
-        android:theme="@style/fontssicita"
-        app:layout_constraintStart_toEndOf="@+id/checkBox13"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
-
-    <ScrollView
-        android:id="@+id/scrollView3"
-        android:layout_width="341dp"
-        android:layout_height="168dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        tools:layout_editor_absoluteX="38dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TableLayout
-                android:id="@+id/tableLayout3"
-                android:layout_width="323dp"
-                android:layout_height="139dp">
-
-                <TableRow
-                    android:layout_width="421dp"
-                    android:layout_height="224dp"
-                    android:scrollbars="vertical"
-                    android:showDividers="middle|beginning|end|none">
-
-
-                    <TextView
-                        android:layout_width="61dp"
-                        android:layout_height="wrap_content"
-                        android:background="#b0b0b0"
-                        android:padding="8dip"
-                        android:text="@string/Sede"
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-
-                    <TextView
-                        android:layout_width="96dp"
-                        android:layout_height="wrap_content"
-                        android:background="#b0b0b0"
-                        android:padding="8dip"
-                        android:text="@string/Empresa"
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-                    <TextView
-                        android:layout_width="125dp"
-                        android:layout_height="wrap_content"
-                        android:background="#b0b0b0"
-                        android:padding="8dip"
-                        android:text="@string/Sede"
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-                    <TextView
-                        android:layout_width="61dp"
-                        android:layout_height="wrap_content"
-                        android:background="#b0b0b0"
-                        android:padding="8dip"
-                        android:text="@string/fecha"
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-                    <TextView
-                        android:layout_width="61dp"
-                        android:layout_height="wrap_content"
-                        android:background="#b0b0b0"
-                        android:padding="8dip"
-                        android:text="@string/seleccionar"
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:padding="14dip"
-                        android:text=""
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:padding="14dip"
-                        android:text=""
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:padding="14dip"
-                        android:text=""
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:padding="14dip"
-                        android:text=""
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:padding="14dip"
-                        android:text=""
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:padding="14dip"
-                        android:text=""
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:padding="14dip"
-                        android:text=""
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:padding="14dip"
-                        android:text=""
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:padding="18dip"
-                        android:text=""
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:padding="18dip"
-                        android:text=""
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:padding="18dip"
-                        android:text=""
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:padding="14dip"
-                        android:text=""
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-                </TableRow>
-            </TableLayout>
-        </LinearLayout>
-
-    </ScrollView>
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="81dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="8dp"
-        android:hint="@string/fecha"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="81dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="1dp"
-        android:hint="@string/hora"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="200dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="8dp"
-        android:hint="@string/Sede"
-        app:layout_constraintStart_toEndOf="@+id/textView14"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+            android:textSize="8sp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

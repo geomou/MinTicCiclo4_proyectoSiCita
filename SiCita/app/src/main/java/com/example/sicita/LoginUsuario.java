@@ -6,14 +6,103 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginUsuario extends AppCompatActivity {
+private EditText txtid;EditText txtidentificacion ;EditText txtnombres;EditText txtdireccion;EditText txtmovil;EditText txtmail;
+CheckBox chkenviar;
+Button btnactualizar;Button btnborrar;
+String dato;String id;String nit;String nombres;String direccion;String movil;String mail;
+Boolean continuar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_usuario);
+        txtid=(EditText) findViewById(R.id.idtxtidusuariog);
+        txtidentificacion=(EditText) findViewById(R.id.idtxtnitusuario);
+        txtnombres=(EditText) findViewById(R.id.idtxtnombreusuario);
+        txtdireccion=(EditText) findViewById(R.id.idtxtdireccionusuario);
+        txtmovil=(EditText) findViewById(R.id.idtxtmovilusuario);
+        txtmail=(EditText) findViewById(R.id.idtxtmailusuario);
+        chkenviar=(CheckBox) findViewById(R.id.idchkenviar);
+        btnactualizar=(Button) findViewById(R.id.idbtnactualizarusuario);
+        btnborrar=(Button) findViewById(R.id.idbtnborrarusuario);
+
+
     }
+    public void Actualizar(View view){
+        id=txtid.getText().toString();
+        nit=txtidentificacion.getText().toString();
+        nombres=txtnombres.getText().toString();
+        direccion=txtdireccion.getText().toString();
+        movil=txtmovil.getText().toString();
+        mail=txtmail.getText().toString();
+        if (!Validardatos())
+        {
+            Toast.makeText(this, "No es posible almacenar , por falta de la siguiente información " + dato, Toast.LENGTH_SHORT).show();
+            dato="";
+            txtidentificacion.requestFocus();
+
+        }
+        else
+
+        {
+            Toast.makeText(this, "Es posible almacenar " , Toast.LENGTH_SHORT).show();
+        }
+
+    }
+    public void Borrar(View view){
+        id=txtid.getText().toString();
+        if (id.equals(""))
+        {
+            Toast.makeText(this, "No es posible Eliminar , debe de cargar un usuario existente " , Toast.LENGTH_SHORT).show();
+            txtidentificacion.requestFocus();
+        }
+
+    }
+    private Boolean Validardatos(){
+        continuar=true;
+        if (nit.equals(""))
+        {
+            dato=dato + " Identificación " + "\n";
+            continuar=false;
+        }
+        if (nombres.equals(""))
+        {
+            dato=dato + " Nombres " + "\n";
+            continuar=false;
+        }
+        if (direccion.equals(""))
+        {
+            dato=dato + " Dirección " + "\n";
+            continuar=false;
+        }
+        if (movil.equals(""))
+        {
+            dato=dato + " Móvil " + "\n";
+            continuar=false;
+        }
+        if (mail.equals(""))
+        {
+            dato=dato + " EMail " + "\n";
+            continuar=false;
+        }
+
+
+        return continuar;
+    }
+
+
+
+
+
+
     @Override
     public  boolean onCreateOptionsMenu(Menu menu)
     {
@@ -46,7 +135,7 @@ public class LoginUsuario extends AppCompatActivity {
 
         } else if(id == R.id.mnu_SedeHorario)
         {
-            Intent newIntent=new Intent(this,SedeHorario.class);
+            Intent newIntent=new Intent(this,Horarios.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 

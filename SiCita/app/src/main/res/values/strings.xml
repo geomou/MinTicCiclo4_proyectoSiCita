@@ -37,6 +37,8 @@
     <string name="url">Url API</string>
     <string name="token">Token</string>
     <string name="activo">Activo</string>
+    <string name="inactivo">Inactivo</string>
+
 
     <string name="marca">Marca</string>
     <string name="desmarca">Descripción Marca</string>
@@ -49,7 +51,9 @@
     <string name="fecha">Fecha</string>
     <string name="hora">Hora</string>
     <string name="buscarfecha">Buscar por fecha</string>
-    <string name="buscarsede">Buscar por cita</string>
+    <string name="buscarsede">Buscar por sede</string>
+    <string name="buscarcita">Buscar</string>
+
 
     <string name="seleccionar">Sel</string>
     <string name="solicitud">Enviar solicitud cancelación</string>
@@ -107,7 +111,9 @@
     <string name="dis">Dispo</string>
     <string name="tipocita">Tipo de Cita</string>
 
-
+    <string name="lon">Longitud</string>
+    <string name="lat">Latitud</string>
+    <string name="propietario">propietario</string>
 
 
     <string-array name="horas">
@@ -138,12 +144,6 @@
         <item>2021</item>
         <item>2022</item>
     </string-array>
-
-
-
-
-
-
 
 
 </resources>

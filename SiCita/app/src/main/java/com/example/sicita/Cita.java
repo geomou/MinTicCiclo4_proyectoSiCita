@@ -46,7 +46,7 @@ public class Cita extends AppCompatActivity {
 
         } else if(id == R.id.mnu_SedeHorario)
         {
-            Intent newIntent=new Intent(this,SedeHorario.class);
+            Intent newIntent=new Intent(this,Horarios.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 

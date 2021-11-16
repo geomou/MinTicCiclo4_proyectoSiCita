@@ -6,8 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".EmpresaUsuario">
 
+    <EditText
+        android:id="@+id/idtxtidusuario"
+        android:layout_width="183dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        android:theme="@style/fontssicita"
+        app:layout_constraintEnd_toStartOf="@+id/imageView13"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/idbtnborrareu"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="267dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/borrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idbtnactualizareu" />
+
+    <Button
+        android:id="@+id/idbtnactualizareu"
         android:layout_width="128dp"
         android:layout_height="42dp"
         android:layout_marginTop="16dp"
@@ -15,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/idtblhorarios" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -39,9 +67,10 @@
         app:srcCompat="@drawable/logo_carempresa" />
 
     <EditText
-        android:id="@+id/nit10"
+        android:id="@+id/idtxtidentificacionbu"
         android:layout_width="204dp"
         android:layout_height="35dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="@string/Identificacion"
         android:inputType="textPersonName"
@@ -52,27 +81,27 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
     <EditText
-        android:id="@+id/nombre16"
+        android:id="@+id/idtxtnombreu"
         android:layout_width="351dp"
         android:layout_height="35dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/Nombre"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nit10" />
+        app:layout_constraintTop_toBottomOf="@+id/idtxtidentificacionbu" />
 
     <TableLayout
-        android:id="@+id/tableLayout3"
+        android:id="@+id/idtblhorarios"
         android:layout_width="330dp"
         android:layout_height="191dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre16">
+        app:layout_constraintTop_toBottomOf="@+id/idtxtnombreu">
 
         <TableRow
             android:layout_width="match_parent"
@@ -99,6 +128,7 @@
                 android:text="@string/selec"
                 android:textColor="#000"
                 android:textSize="12dp" />
+
 
 
         </TableRow>

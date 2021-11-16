@@ -17,6 +17,8 @@ public class Asesor extends AppCompatActivity {
     Switch swmg; Switch swpintura;Switch swlatoneria;Switch swelectoespe;Switch swelectrogral;
     Button btnactualizar;Button btnborrar;
     String dato="";
+    String id;String identificacion;String nombre;String tel;String movil;String mail;
+    Boolean mg;Boolean pin; Boolean lat; Boolean esp;Boolean gral;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,76 @@ public class Asesor extends AppCompatActivity {
 
     }
 
+    public void Actualizar(View view)
+    {
+        id=txtid.getText().toString();
+        identificacion=txtidentificacion.getText().toString();
+        nombre=txtnombre.getText().toString();
+        tel=txttelefono.getText().toString();
+        movil=txtmovil.getText().toString();
+        mail=txtemail.getText().toString();
+
+        boolean validar= this.validarCampos();
+        if (!validar)
+        {
+            Toast.makeText(this, "No es posible almacenar , por falta de la siguiente información " + dato, Toast.LENGTH_SHORT).show();
+            txtidentificacion.requestFocus();
+            dato="";
+        }
+        else
+        {
+            Toast.makeText(this, "Es posible almacenar " + dato, Toast.LENGTH_SHORT).show();
+        }
+
+    }
+    public void Borrar(View view)
+    {
+        id=txtid.getText().toString();
+        if (id.equals(""))
+        {
+            Toast.makeText(this, "No es posible eliminar este Asesor , no se encuentra actualizado" , Toast.LENGTH_SHORT).show();
+            dato="";
+            txtidentificacion.requestFocus();
+        }
+        else
+        {
+            Toast.makeText(this, "Es posible borrar " + dato, Toast.LENGTH_SHORT).show();
+        }
+
+    }
+    public boolean validarCampos()
+    {
+
+       boolean continuar=true;
+
+       if (id.equals(""))
+       {
+           dato=dato+ " Identificación" + "\n";
+           continuar= false;
+       }
+       if (nombre.equals(""))
+       {
+           dato=dato+ " Nombre " + "\n";
+           continuar= false;
+       }
+        if (tel.equals(""))
+        {
+            dato=dato+ " Teléfono  " + "\n";
+            continuar= false;
+        }
+        if (movil.equals(""))
+        {
+            dato=dato+ " Teléfono Móvil  " + "\n";
+            continuar= false;
+        }
+        if (mail.equals(""))
+        {
+            dato=dato+ " Email  " + "\n";
+            continuar= false;
+        }
+
+        return continuar;
+    }
     public boolean onOptionsItemSelected(MenuItem menuItem)
     {
         int id=menuItem.getItemId();
@@ -70,7 +142,7 @@ public class Asesor extends AppCompatActivity {
 
         } else if(id == R.id.mnu_SedeHorario)
         {
-            Intent newIntent=new Intent(this,SedeHorario.class);
+            Intent newIntent=new Intent(this,Horarios.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
@@ -138,55 +210,7 @@ public class Asesor extends AppCompatActivity {
 
 
 
-
-
         return super.onOptionsItemSelected(menuItem);
     }
 
-    public void Actualizar(View view)
-    {
-        String id=txtid.getText().toString();
-
-        boolean validar= this.validarCampos();
-        Toast.makeText(this, "No por admin  " + validar, Toast.LENGTH_SHORT).show();
-        if (!validar.)
-        {
-            Toast.makeText(this, "No es posible almacenar , por falta de la siguiente información " + dato, Toast.LENGTH_SHORT).show();
-        }
-
-    }
-
-    public boolean validarCampos()
-    {
-
-       boolean continuar=true;
-
-       if (txtidentificacion.equals(""))
-       {
-           dato=dato+ " Identificación";
-           continuar= false;
-       }
-       if (txtnombre.equals(""))
-       {
-           dato=dato+ " Nombre ";
-           continuar= false;
-       }
-        if (txttelefono.equals(""))
-        {
-            dato=dato+ " Teléfono  ";
-            continuar= false;
-        }
-        if (txtmovil.equals(""))
-        {
-            dato=dato+ " Teléfono Móvil  ";
-            continuar= false;
-        }
-        if (txtemail.equals(""))
-        {
-            dato=dato+ " Email  ";
-            continuar= false;
-        }
-        Toast.makeText(this, "entro" + dato + continuar, Toast.LENGTH_SHORT).show();
-        return continuar;
-    }
 }

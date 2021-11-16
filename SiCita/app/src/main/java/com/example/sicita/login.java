@@ -31,12 +31,7 @@ public class Login extends AppCompatActivity {
         txtclave=(EditText) findViewById(R.id.idtxtclave);
         btoingresar=(Button) findViewById(R.id.idbtningresar);
 
-
-
     }
-
-
-
 
     public void ingresar(View view)
     {
@@ -51,7 +46,6 @@ public class Login extends AppCompatActivity {
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
             finish();
-
         }
         else {
             Toast.makeText(this, "Usuario o clave Incorrecto", Toast.LENGTH_SHORT).show();
