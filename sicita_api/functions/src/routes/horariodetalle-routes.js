@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 const express = require("express");
 const horariodet = require("../controllers/horariodetController");
 const router = express.Router();

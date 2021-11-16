@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 const express = require("express");
 const cita = require("../controllers/citaController");
 const router = express.Router();

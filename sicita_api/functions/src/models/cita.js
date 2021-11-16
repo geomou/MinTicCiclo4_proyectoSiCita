@@ -1,5 +1,3 @@
-/* eslint-disable require-jsdoc */
-
 class Cita {
   constructor(
       idempresa,

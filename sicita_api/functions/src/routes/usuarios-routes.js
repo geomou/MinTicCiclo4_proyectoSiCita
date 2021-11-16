@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 const express = require("express");
 const us = require("../controllers/usuariosController");
 const router = express.Router();

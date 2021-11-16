@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 const express = require("express");
 const empresa = require("../controllers/empresaController");
 const router = express.Router();

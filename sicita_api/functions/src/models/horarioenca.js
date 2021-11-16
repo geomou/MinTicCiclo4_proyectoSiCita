@@ -1,4 +1,3 @@
-/* eslint-disable require-jsdoc */
 class HorarioEncabezado {
   constructor(idemp, idsede, nombre, estado) {
     this.idemp = idemp;

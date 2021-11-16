@@ -1,9 +1,7 @@
-/* eslint-disable new-cap */
+
 const express = require("express");
 const usuarioempresa = require("../controllers/usuarioempresaController");
 const router = express.Router();
-
-
 router.get("/UsuarioEmpresa", usuarioempresa.getTodosUusuarioEmpresa);
 router.post("/UsuarioEmpresa", usuarioempresa.addUsuarioEmpresa);
 router.get("/UsuarioEmpresa/:id", usuarioempresa.getUsuarioEmpresa);

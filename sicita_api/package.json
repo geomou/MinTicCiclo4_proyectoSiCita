@@ -3,5 +3,9 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.2.0"
   }
 }

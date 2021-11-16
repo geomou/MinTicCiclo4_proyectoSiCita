@@ -1,6 +1,3 @@
-/* eslint-disable require-jsdoc */
-
-
 class MarcaModelo {
   constructor(id, codigo, descripcion, esmarca, idmarcamodelo) {
     this.id=id;

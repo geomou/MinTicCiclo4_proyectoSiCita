@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 const express = require("express");
 const marcamodelo = require("../controllers/marcamodeloController");
 const router = express.Router();

@@ -1,5 +1,3 @@
-/* eslint-disable require-jsdoc */
-
 class Vehiculos {
   constructor(idmarcamodelo, placa, año, caracteristicas, idusuario) {
     this.idmodelo = idmarcamodelo;

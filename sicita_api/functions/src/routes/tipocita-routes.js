@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 const express = require("express");
 const tipocita = require("../controllers/tipocitaController");
 const router = express.Router();

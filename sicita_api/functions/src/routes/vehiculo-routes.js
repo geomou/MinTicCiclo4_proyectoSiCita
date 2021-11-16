@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 const express = require("express");
 const vehiculo = require("../controllers/vehiculoController");
 const router = express.Router();
