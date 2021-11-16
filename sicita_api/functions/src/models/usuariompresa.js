@@ -1,8 +1,9 @@
+/* eslint-disable require-jsdoc */
+
 class UsuarioEmpresa {
-    constructor(idempresa,idusuario) 
-    {
-        this.idusuario = idusuario;
-        this.idempresa =idempresa;
-    }
+  constructor(idempresa, idusuario) {
+    this.idusuario = idusuario;
+    this.idempresa =idempresa;
+  }
 }
 module.exports = UsuarioEmpresa;

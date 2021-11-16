@@ -1,8 +1,10 @@
+/* eslint-disable require-jsdoc */
+
 class Empresa {
-    constructor(
-        id,identificacion, razonsocial,direccion, telefono1,telefono2,contacto,urlapi,clave,estado
-    )
-    {
+  constructor(
+      id, identificacion, razonsocial, direccion, telefono1, telefono2,
+      contacto, urlapi, clave, estado
+  ) {
     this.id=id;
     this.identificacion=identificacion;
     this.razonsocial=razonsocial;
@@ -13,6 +15,6 @@ class Empresa {
     this.urlapi=urlapi;
     this.clave=clave;
     this.estado=estado;
-    }
+  }
 }
 module.exports=Empresa;
