@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
-public class Login extends AppCompatActivity {
+public class login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

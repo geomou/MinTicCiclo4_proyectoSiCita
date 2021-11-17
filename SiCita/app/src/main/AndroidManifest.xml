@@ -12,7 +12,6 @@
         <activity
             android:name=".Splash2"
             android:exported="false" />
-
         <activity
             android:name=".Principal"
             android:exported="false" />
@@ -35,7 +34,7 @@
             android:name=".LoginUsuario"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".login"
             android:exported="false" />
         <activity
             android:name=".MaestroCita"

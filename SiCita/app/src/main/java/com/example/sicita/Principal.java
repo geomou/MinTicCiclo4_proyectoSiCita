@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Principal extends AppCompatActivity {
 
@@ -151,4 +152,41 @@ public class Principal extends AppCompatActivity {
          return  super.onKeyDown(KeyCode, event);
 
     }
+    public void goToActivity (View view){
+        Intent newIntent = new Intent( this, CitaBuscar.class);
+        newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(newIntent);
+
+    }
+    public void goToActivity1 (View view){
+        Intent newIntent = new Intent( this, Cita.class);
+        newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(newIntent);
+
+    }
+    public void goToActivity2 (View view){
+        Intent newIntent = new Intent( this, Asesor.class);
+        newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(newIntent);
+
+    }
+    public void goToActivity3 (View view){
+        Intent newIntent = new Intent( this, Sede.class);
+        newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(newIntent);
+
+    }
+    public void goToActivity4 (View view){
+        Intent newIntent = new Intent( this, EmpresaUsuario.class);
+        newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(newIntent);
+
+    }
+    public void goToActivity5 (View view){
+        Intent newIntent = new Intent( this, Historia.class);
+        newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(newIntent);
+
+    }
+
 }
