@@ -1,3 +1,4 @@
+/* eslint-disable require-jsdoc */
 class Usuarios {
   constructor(
       id, nombre, telefono1, movil, direccion, email, clave
