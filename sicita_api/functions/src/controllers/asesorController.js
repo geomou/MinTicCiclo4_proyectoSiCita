@@ -1,8 +1,10 @@
 const db = require("../configdb/config");
 const Asesor = require("../models/asesor");
 
-const getTodosAsesores = async (req, res, next) => {
-    try {
+
+router.get('/',function(req, res)
+{
+     try {
         const asesores = await db.collection('asesor');
         const datos = await asesores.get();
 
@@ -30,6 +32,11 @@ const getTodosAsesores = async (req, res, next) => {
     } catch (error) {
         res.status(404).send(error.message);
     }
+}
+)
+
+const getTodosAsesores = async (req, res) => {
+   
 }
 
 const addAsesor = async (req, res) => {

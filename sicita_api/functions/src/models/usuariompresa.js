@@ -1,3 +1,4 @@
+/* eslint-disable require-jsdoc */
 class UsuarioEmpresa {
   constructor(idempresa, idusuario) {
     this.idusuario = idusuario;

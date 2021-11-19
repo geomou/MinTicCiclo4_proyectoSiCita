@@ -1,3 +1,4 @@
+/* eslint-disable require-jsdoc */
 class Empresa {
   constructor(
       id, identificacion, razonsocial, direccion, telefono1, telefono2,

@@ -1,8 +1,7 @@
+/* eslint-disable new-cap */
 const express = require("express");
 const us = require("../controllers/usuariosController");
 const router = express.Router();
-
-
 router.get("/Usuarios", us.getTodosUsuarios);
 router.post("/Usuario", us.addUsuario);
 router.get("/Usuario/:id", us.getUsuario);

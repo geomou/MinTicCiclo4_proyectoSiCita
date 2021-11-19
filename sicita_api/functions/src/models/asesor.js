@@ -1,3 +1,4 @@
+/* eslint-disable require-jsdoc */
 class Asesor {
   constructor(idemp, identificacion, nombre, telefono1, movil, email, idsede) {
     this.idemp = idemp;

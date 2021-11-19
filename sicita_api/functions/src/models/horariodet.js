@@ -1,3 +1,4 @@
+/* eslint-disable require-jsdoc */
 class HorarioDetalle {
   constructor(idhorarioenc, diasemana, horainicial, horafinal, disponible) {
     this.idhorarioenc = idhorarioenc;
