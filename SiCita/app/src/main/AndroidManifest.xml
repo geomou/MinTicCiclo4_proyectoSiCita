@@ -38,7 +38,7 @@
             android:name=".LoginUsuario"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".login"
             android:exported="false" />
         <activity
             android:name=".MaestroCita"

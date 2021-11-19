@@ -12,8 +12,10 @@ import android.widget.Button;
 import  android.widget.EditText;
 import android.widget.Toast;
 
+
 public class Login extends AppCompatActivity {
     private Button btoingresar; EditText txtusuario; EditText txtclave;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
