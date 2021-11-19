@@ -9,7 +9,7 @@ const getTodosCanalCita = async (req, res, next) => {
         const listadocanalcita = [];
         if (datos.empty) {
             res.status(404).send(
-                'No existen registros'
+                'No existen registros' 
             );
         } else {
             datos.forEach(doc => {
