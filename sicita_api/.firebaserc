@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "sicita-8e3c0"
-  }
+    "default": "sicita-8e3c0",
+    "GSicita": "sicita-8e8ce"
+  },
+  "targets": {}
 }
