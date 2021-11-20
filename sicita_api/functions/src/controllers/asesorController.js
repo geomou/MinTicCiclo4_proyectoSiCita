@@ -2,9 +2,9 @@ const db = require("../configdb/config");
 const Asesor = require("../models/asesor");
 
 
-router.get('/',function(req, res)
-{
-     try {
+
+const getTodosAsesores = async (req, res) => {
+   try {
         const asesores = await db.collection('asesor');
         const datos = await asesores.get();
 
@@ -32,13 +32,7 @@ router.get('/',function(req, res)
     } catch (error) {
         res.status(404).send(error.message);
     }
-}
-)
-
-const getTodosAsesores = async (req, res) => {
-   
-}
-
+} 
 const addAsesor = async (req, res) => {
     try {
         const data = req.body;

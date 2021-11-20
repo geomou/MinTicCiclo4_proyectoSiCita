@@ -1,4 +1,4 @@
-module.exports = {root: true, env: {es6: true, node: true},
+module.exports = {root: true, env: {es8: true, node: true},
 
   extends: [
 
