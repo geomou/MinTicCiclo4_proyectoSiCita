@@ -12,8 +12,9 @@ import  android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.loginMVP;
 
-public class Login extends AppCompatActivity {
+public class Login extends AppCompatActivity implements loginMVP.View{
     private Button btoingresar; EditText txtusuario; EditText txtclave;
     private String apiurl,usuario,clave;
     @Override

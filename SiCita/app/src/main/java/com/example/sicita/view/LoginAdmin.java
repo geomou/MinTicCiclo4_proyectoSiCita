@@ -13,8 +13,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.loginadminMVP;
 
-public class LoginAdmin extends AppCompatActivity {
+public class LoginAdmin extends AppCompatActivity implements loginadminMVP.View{
     private EditText txtidadmin;EditText txtnit;EditText txtnombres;EditText txttel;EditText txtmovil;EditText txtmail;
     CheckBox chkesadmin;CheckBox chkesasesor;
     Button btnactualizar;Button btnborrar;

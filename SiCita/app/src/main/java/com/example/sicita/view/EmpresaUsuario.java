@@ -13,8 +13,9 @@ import android.widget.TableLayout;
 import android.widget.Toast;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.empresausuarioMVP;
 
-public class EmpresaUsuario extends AppCompatActivity {
+public class EmpresaUsuario extends AppCompatActivity implements empresausuarioMVP.View {
     private EditText txtidentificacion ;EditText txtidusuario;EditText txtnombres;
     TableLayout tblusuarioempresa;
     Button btnactualizar;Button btnborrar;

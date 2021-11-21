@@ -14,8 +14,9 @@ import android.widget.TableLayout;
 import android.widget.Toast;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.marcamodeloMVP;
 
-public class MarcaModelo extends AppCompatActivity {
+public class MarcaModelo extends AppCompatActivity implements marcamodeloMVP.View {
     EditText txtid,txtmarca,txtmodeo;
     TableLayout tblmarca,tblmodelo;
     ImageButton btnaddlinmarca,btnaddlinmodelo,btndellinmarca, btndellinmodeo;

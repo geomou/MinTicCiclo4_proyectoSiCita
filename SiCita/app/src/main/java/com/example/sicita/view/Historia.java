@@ -8,8 +8,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.historiaMVP;
 
-public class Historia extends AppCompatActivity {
+public class Historia extends AppCompatActivity implements historiaMVP.View {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -13,8 +13,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.loginusuarioMVP;
 
-public class LoginUsuario extends AppCompatActivity {
+public class LoginUsuario extends AppCompatActivity implements loginusuarioMVP.View{
 private EditText txtid;EditText txtidentificacion ;EditText txtnombres;EditText txtdireccion;EditText txtmovil;EditText txtmail;
 CheckBox chkenviar;
 Button btnactualizar;Button btnborrar;

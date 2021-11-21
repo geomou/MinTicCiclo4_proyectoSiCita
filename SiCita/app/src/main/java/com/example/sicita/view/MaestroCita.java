@@ -14,8 +14,9 @@ import android.widget.TableLayout;
 import android.widget.Toast;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.maestrocitaMVP;
 
-public class MaestroCita extends AppCompatActivity {
+public class MaestroCita extends AppCompatActivity implements maestrocitaMVP.View {
     private EditText txtid;EditText txtnombre;EditText txttipo;EditText Tiempo;
     ImageButton btnadicionarlin;ImageButton btneliminarlin;
     Button btnactualizar;Button btneliminar;
