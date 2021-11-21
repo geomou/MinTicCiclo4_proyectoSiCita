@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sicita">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
 
     <application
         android:allowBackup="true"
@@ -11,58 +14,58 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SiCita">
         <activity
-            android:name=".Horarios"
+            android:name=".view.Horarios"
             android:exported="false" />
         <activity
-            android:name=".Splash2"
+            android:name=".view.Splash2"
             android:exported="false" />
         <activity
-            android:name=".Principal"
+            android:name=".view.Principal"
             android:exported="false" />
         <activity
-            android:name=".Historia"
+            android:name=".view.Historia"
             android:exported="false" />
         <activity
-            android:name=".Cita"
+            android:name=".view.Cita"
             android:exported="false" />
         <activity
-            android:name=".CitaBuscar"
+            android:name=".view.CitaBuscar"
             android:exported="false" />
         <activity
-            android:name=".Vehiculo"
+            android:name=".view.Vehiculo"
             android:exported="false" />
         <activity
-            android:name=".EmpresaUsuario"
+            android:name=".view.EmpresaUsuario"
             android:exported="false" />
         <activity
-            android:name=".LoginUsuario"
+            android:name=".view.LoginUsuario"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".view.Login"
             android:exported="false" />
         <activity
-            android:name=".MaestroCita"
+            android:name=".view.MaestroCita"
             android:exported="false" />
         <activity
-            android:name=".Asesor"
+            android:name=".view.Asesor"
             android:exported="false" />
         <activity
-            android:name=".MarcaModelo"
+            android:name=".view.MarcaModelo"
             android:exported="false" />
         <activity
-            android:name=".Sede"
+            android:name=".view.Sede"
             android:exported="false" />
         <activity
-            android:name=".LoginAdmin"
+            android:name=".view.LoginAdmin"
             android:exported="false" />
         <activity
-            android:name=".Empresa"
+            android:name=".view.Empresa"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Splash"
+            android:name=".view.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
