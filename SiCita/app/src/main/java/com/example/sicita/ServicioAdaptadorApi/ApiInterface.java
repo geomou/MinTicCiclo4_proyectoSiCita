@@ -1,13 +1,15 @@
 package com.example.sicita.ServicioAdaptadorApi;
 
 
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.http.GET;
-import retrofit2.http.Query;
+import com.example.sicita.ClassModel.ClassUsuario;
+
+import retrofit2.Call;
+import retrofit2.http.Body;
+import retrofit2.http.POST;
 
 public interface ApiInterface {
-    //@GET("usuario")
-    //call <usuario> getUsuario(@Query("usuario") String Usuario , @Query("clave") String Clave);
+
+    @POST("Usuario_login")
+    Call<ClassUsuario> loginusuario(@Body ClassUsuario user);
 
 }
