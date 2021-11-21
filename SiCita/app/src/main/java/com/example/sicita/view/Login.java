@@ -2,8 +2,11 @@ package com.example.sicita.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -13,10 +16,12 @@ import android.widget.Toast;
 
 import com.example.sicita.R;
 import com.example.sicita.mvp.loginMVP;
+import com.example.sicita.presenter.loginPresenter;
 
 public class Login extends AppCompatActivity implements loginMVP.View{
     private Button btoingresar; EditText txtusuario; EditText txtclave;
     private String apiurl,usuario,clave;
+    private loginMVP.Presenter presenter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +31,9 @@ public class Login extends AppCompatActivity implements loginMVP.View{
                 WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
         );
-                //Ocultar Accion bar
+
+        presenter =new loginPresenter() ;
+        //Ocultar Accion bar
         getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
 
@@ -41,6 +48,11 @@ public class Login extends AppCompatActivity implements loginMVP.View{
         String usuario= txtusuario.getText().toString();
         String clave=txtclave.getText().toString();
 
+        if (!isOnline()) {
+            Toast.makeText(this, "No es posible la conexión" , Toast.LENGTH_SHORT).show();
+
+            return;
+        }
         if (!usuario.equals("") && !clave.equals(""))
         {
         if (usuario.equals("admin") && clave.equals("admin"))
@@ -85,4 +97,15 @@ public class Login extends AppCompatActivity implements loginMVP.View{
 
     }
 
+    @Override
+    public void vervalidacion(String usuario) {
+
+    }
+    private boolean isOnline() {
+        ConnectivityManager cm =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        return activeNetwork != null && activeNetwork.isConnected();
+    }
 }
