@@ -14,14 +14,26 @@ import android.widget.Button;
 import  android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.sicita.ClassModel.ClassUsuario;
 import com.example.sicita.R;
+import com.example.sicita.ServicioAdaptadorApi.ApiInterface;
+import com.example.sicita.ServicioAdaptadorApi.Apicliente;
 import com.example.sicita.mvp.loginMVP;
 import com.example.sicita.presenter.loginPresenter;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+import retrofit2.Retrofit;
 
 public class Login extends AppCompatActivity implements loginMVP.View{
     private Button btoingresar; EditText txtusuario; EditText txtclave;
     private String apiurl,usuario,clave;
     private loginMVP.Presenter presenter;
+    private ApiInterface  ApiInterface;
+    private Boolean ingreso;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +45,7 @@ public class Login extends AppCompatActivity implements loginMVP.View{
         );
 
         presenter =new loginPresenter() ;
+        ApiInterface= Apicliente.loginRetrofit().create(ApiInterface.class);
         //Ocultar Accion bar
         getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
@@ -55,17 +68,27 @@ public class Login extends AppCompatActivity implements loginMVP.View{
         }
         if (!usuario.equals("") && !clave.equals(""))
         {
-        if (usuario.equals("admin") && clave.equals("admin"))
-        {
-            Intent newIntent =new Intent( this, Principal.class);
-            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(newIntent);
-            finish();
-        }
+            if (ValidarIngreso(txtusuario.toString(),txtclave.toString()))
+            {
+                Toast.makeText(this, "Usuario o clave correcto", Toast.LENGTH_SHORT).show();
+            }
+            else
+            {
+                Toast.makeText(this, "Usuario o clave Incorrecto", Toast.LENGTH_SHORT).show();
+                txtusuario.requestFocus();
+
+            }
+       /*   if (usuario.equals("admin") && clave.equals("admin"))
+         {
+                    Intent newIntent =new Intent( this, Principal.class);
+                    newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(newIntent);
+                    finish();
+            }
         else {
             Toast.makeText(this, "Usuario o clave Incorrecto", Toast.LENGTH_SHORT).show();
-            txtusuario.requestFocus();
-        }
+            txtusuario.requestFocus();*/
+
 
         }
         else
@@ -87,12 +110,28 @@ public class Login extends AppCompatActivity implements loginMVP.View{
 
     private Boolean ValidarIngreso(String  usuario,String clave)
     {
-        Boolean ingreso=false;
+         ingreso=false;
+        ClassUsuario user=new ClassUsuario(txtusuario.toString(),txtclave.toString());
+        Call <ClassUsuario> calluser=ApiInterface.loginusuario(user);
+        calluser.enqueue(new Callback<ClassUsuario>() {
+            @Override
+            public void onResponse(Call<ClassUsuario> call, Response<ClassUsuario> response) {
+                ClassUsuario user1 = response.body();
+                Toast.makeText(getApplicationContext(), "Informacion cargada ", Toast.LENGTH_SHORT).show();
+                ingreso=true  ;
+            }
+
+            @Override
+            public void onFailure(Call<ClassUsuario> call, Throwable t) {
+                ingreso=false;
+                call.cancel();
+
+            }
+        });
 
 
 
-
-        return   ingreso =true;
+              return   ingreso =true;
 
 
     }

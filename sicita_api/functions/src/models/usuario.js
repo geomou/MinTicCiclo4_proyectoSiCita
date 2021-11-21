@@ -4,7 +4,7 @@ class Usuarios {
       id, nombre, telefono1, movil, direccion, email, clave
   ) {
     this.id = id;
-    this.nombre = nombre;
+    this.usuario = nombre;
     this.telefono1 = telefono1;
     this.movil = movil;
     this.direccion = direccion;
