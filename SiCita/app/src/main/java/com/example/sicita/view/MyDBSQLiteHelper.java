@@ -1,4 +1,4 @@
-package com.example.sicita;
+package com.example.sicita.view;
 
 
 import android.content.Context;

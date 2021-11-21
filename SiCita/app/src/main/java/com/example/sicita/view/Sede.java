@@ -1,4 +1,4 @@
-package com.example.sicita;
+package com.example.sicita.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,47 +9,54 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.TableLayout;
+import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class MarcaModelo extends AppCompatActivity {
-    EditText txtid,txtmarca,txtmodeo;
-    TableLayout tblmarca,tblmodelo;
-    ImageButton btnaddlinmarca,btnaddlinmodelo,btndellinmarca, btndellinmodeo;
+import com.example.sicita.R;
+
+public class Sede extends AppCompatActivity {
+    private EditText txttid,txtidemp,txtempresa,txtnombresede, txtdireccion;
+    Switch swmanto,swse,swlav,swrtm;
     Button btnactualizar,btnborrar;
-    String id,dato;
-    Integer filastblmarca,filatblmodelo;
+    TextView txvlongitud,txvlatitud;
+    String id, idempresa,nombreempresa,sede,direccion,dato,longitud,latitud;
     Boolean continuar;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_marca_modelo);
-        txtid=(EditText) findViewById(R.id.idtxtidempmarca);
-        tblmarca=(TableLayout) findViewById(R.id.idtblmarca);
-        tblmodelo=(TableLayout) findViewById(R.id.idtblhorarios);
-        btnaddlinmarca=(ImageButton) findViewById(R.id.idbtnaddlinmarca);
-        btnaddlinmodelo=(ImageButton)findViewById(R.id.idbtnaddlinmodelo);
-        btndellinmarca=(ImageButton) findViewById(R.id.idbtndellinmarca);
-        btndellinmodeo=(ImageButton) findViewById(R.id.idbtndellinmodelo);
-        btnactualizar=(Button) findViewById(R.id.idbtnactualizarmarca);
-        txtmarca=(EditText) findViewById(R.id.idtxtmarca);
-        txtmodeo=(EditText) findViewById(R.id.idtxtmodeo);
-
-
-    }
-
-    public void Actualizar(View view)
-    {
-        id=txtid.getText().toString();
-        filastblmarca=tblmarca.getChildCount();
-        filatblmodelo=tblmodelo.getChildCount();
+        setContentView(R.layout.activity_sede);
+        txttid=(EditText) findViewById(R.id.idtxtidsede);
+        txtidemp=(EditText) findViewById(R.id.idtxtidempresasede);
+        txtempresa=(EditText) findViewById(R.id.idtxtempresasede);
+        txtnombresede=(EditText) findViewById(R.id.idtxtnombresede);
+        txtdireccion=(EditText) findViewById(R.id.idtxtdireccionsede);
+        txtdireccion=(EditText) findViewById(R.id.idtxtdireccionsede);
+        swmanto=(Switch) findViewById(R.id.idswmg);
+        swse=(Switch) findViewById(R.id.idswse);
+        swlav=(Switch) findViewById(R.id.idswlav);
+        swrtm=(Switch) findViewById(R.id.idswrtm);
+        txvlongitud=(TextView) findViewById(R.id.idtxvlongitud);
+        txvlatitud=(TextView) findViewById(R.id.idtxvlatitud);
+        btnactualizar=(Button) findViewById(R.id.idbtnactsede);
+        btnborrar=(Button) findViewById(R.id.idbtnborrarsede);
+     }
+     public void Actualizar(View view){
+        id=txttid.getText().toString();
+        idempresa=txtidemp.getText().toString();
+        nombreempresa=txtempresa.getText().toString();
+        sede=txtnombresede.getText().toString();
+        latitud=txvlatitud.getText().toString();
+        longitud=txvlongitud.getText().toString();
+         direccion=txtdireccion.getText().toString();
         if (!Validardatos())
         {
             Toast.makeText(this, "No es posible Actualizar ,por la siguiente razón"  + dato, Toast.LENGTH_SHORT).show();
-            txtmarca.requestFocus();
+            dato="";
+            txttid.requestFocus();
         }
         else
         {
@@ -57,40 +64,59 @@ public class MarcaModelo extends AppCompatActivity {
         }
 
 
-
     }
-    public void Borrar(View view){
-        id=txtid.getText().toString();
-        if (id.equals(""))
-        {
-            Toast.makeText(this, "No es posible Eliminar ,por la siguiente razón"  + dato, Toast.LENGTH_SHORT).show();
-            txtmarca.requestFocus();
-        }
-    }
+     public void Borrar(View view){
+         id=txttid.getText().toString();
+         if (id.equals(""))
+         {
+             Toast.makeText(this, "No es posible Eliminar ,no se ha cargado una sede"  , Toast.LENGTH_SHORT).show();
+             txtidemp.requestFocus();
+         }
 
-    private   Boolean Validardatos()
-    {
+     }
+     private Boolean Validardatos(){
         continuar=true;
-        if (id.equals(""))
+        if (idempresa.equals(""))
         {
-            dato=dato + "No se ha llamado a una  Empresa " + "\n";
+            dato=dato + " No  ha cargado empresa " + "\n";
             continuar=false;
         }
-        if (filastblmarca == 0)
+        if (sede.equals("") )
         {
-            dato=dato + " La tabla de Marca no continue datos " + "\n";
+            dato=dato + " Nombre Sede " + "\n";
             continuar=false;
         }
-        if (filatblmodelo==0)
+        if(direccion.equals(""))
         {
-            dato=dato + " La tabla Modelos no continue datos " + "\n";
+            dato=dato + " Dirección " + "\n";
             continuar=false;
         }
+        if (latitud.equals(""))
+        {
+            dato=dato + " Latitud " + "\n";
+            continuar=false;
+        }
+        if (longitud.equals(""))
+         {
+             dato=dato + " Longitud " + "\n";
+             continuar=false;
+         }
+
+
 
 
         return continuar;
+     }
 
-    }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -109,14 +135,14 @@ public class MarcaModelo extends AppCompatActivity {
         int id=menuItem.getItemId();
         if (id == R.id.mnu_LoginAdmin)
         {
-            Intent newIntent=new Intent(this,LoginAdmin.class);
+            Intent newIntent=new Intent(this, LoginAdmin.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         }
         else if(id == R.id.mnu_LoginUsuario)
         {
-            Intent newIntent=new Intent(this,LoginUsuario.class);
+            Intent newIntent=new Intent(this, LoginUsuario.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
@@ -128,37 +154,37 @@ public class MarcaModelo extends AppCompatActivity {
 
         } else if(id == R.id.mnu_SedeHorario)
         {
-            Intent newIntent=new Intent(this,Horarios.class);
+            Intent newIntent=new Intent(this, Horarios.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         }        else if(id == R.id.mnu_asesor)
         {
-            Intent newIntent=new Intent(this,Asesor.class);
+            Intent newIntent=new Intent(this, Asesor.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         } else if(id == R.id.mnu_Empresa)
         {
-            Intent newIntent=new Intent(this,Empresa.class);
+            Intent newIntent=new Intent(this, Empresa.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         }else if(id == R.id.mnu_MaestroCita)
         {
-            Intent newIntent=new Intent(this,MaestroCita.class);
+            Intent newIntent=new Intent(this, MaestroCita.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         } else if(id == R.id.mnu_MarcaModelo)
         {
-            Intent newIntent=new Intent(this,MarcaModelo.class);
+            Intent newIntent=new Intent(this, MarcaModelo.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         } else if(id == R.id.mnu_Vehiculo)
         {
-            Intent newIntent=new Intent(this,Vehiculo.class);
+            Intent newIntent=new Intent(this, Vehiculo.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
@@ -170,25 +196,25 @@ public class MarcaModelo extends AppCompatActivity {
 
         } else if(id == R.id.mnu_Cita)
         {
-            Intent newIntent=new Intent(this,Cita.class);
+            Intent newIntent=new Intent(this, Cita.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         }else if(id == R.id.mnu_CitaBuscar)
         {
-            Intent newIntent=new Intent(this,CitaBuscar.class);
+            Intent newIntent=new Intent(this, CitaBuscar.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         }else if(id == R.id.mnu_Historia)
         {
-            Intent newIntent=new Intent(this,Historia.class);
+            Intent newIntent=new Intent(this, Historia.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         }else if(id == R.id.mnu_empresausuario)
         {
-            Intent newIntent=new Intent(this,EmpresaUsuario.class);
+            Intent newIntent=new Intent(this, EmpresaUsuario.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 

@@ -1,4 +1,4 @@
-package com.example.sicita;
+package com.example.sicita.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TableLayout;
 import android.widget.Toast;
+
+import com.example.sicita.R;
 
 public class Horarios extends AppCompatActivity {
  private   EditText txtidsede, txtnombresede,txtnombrehorario;

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vehiculo">
+    tools:context=".view.Vehiculo">
 
     <Button
         android:id="@+id/idbtnactualizarvehi"
@@ -54,7 +54,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="14dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/idtxtnombrepropietario"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView20"
         app:srcCompat="@android:drawable/ic_search_category_default" />
 

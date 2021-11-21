@@ -1,6 +1,5 @@
-package com.example.sicita;
+package com.example.sicita.view;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,8 +11,11 @@ import android.widget.Button;
 import  android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.sicita.R;
+
 public class Login extends AppCompatActivity {
     private Button btoingresar; EditText txtusuario; EditText txtclave;
+    private String apiurl,usuario,clave;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +44,7 @@ public class Login extends AppCompatActivity {
         {
         if (usuario.equals("admin") && clave.equals("admin"))
         {
-            Intent newIntent =new Intent( this,Principal.class);
+            Intent newIntent =new Intent( this, Principal.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
             finish();
@@ -68,10 +70,18 @@ public class Login extends AppCompatActivity {
 
         }
 
+    }
+
+    private Boolean ValidarIngreso(String  usuario,String clave)
+    {
+        Boolean ingreso=false;
 
 
 
+
+        return   ingreso =true;
 
 
     }
+
 }

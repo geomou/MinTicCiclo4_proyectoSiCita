@@ -1,6 +1,4 @@
-package com.example.sicita;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.sicita.view;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,8 +6,9 @@ import android.widget.VideoView;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
-import android.os.Bundle;
-import android.widget.VideoView;
+
+import com.example.sicita.R;
+import com.example.sicita.view.Principal;
 
 public class Splash2 extends Activity implements OnCompletionListener {
 

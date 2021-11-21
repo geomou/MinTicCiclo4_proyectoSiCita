@@ -57,6 +57,22 @@ const getUsuario = async (req, res) => {
         res.status(404).send(error.message);
     }
 }
+const getlogueoUsuario = async (req, res) => {
+    try {
+        const id = req.params.usuario;
+        const usuario = await db.collection('Usuarios').doc(nombre);
+        const data = await usuario.get();
+
+        if (!data.exists) {
+            res.status(404).send('Usuario no existe');
+        } else {
+            res.send(data.data());
+        }
+
+    } catch (error) {
+        res.status(404).send(error.message);
+    }
+}
 
 const updateUsuario = async (req, res) => {
     try {
@@ -87,6 +103,7 @@ module.exports = {
     addUsuario,
     getUsuario,
     updateUsuario,
-    delusuario
+    delusuario,
+    getlogueoUsuario,
 
 }

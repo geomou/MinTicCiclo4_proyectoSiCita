@@ -1,4 +1,4 @@
-package com.example.sicita;
+package com.example.sicita.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.WindowManager;
+
+import com.example.sicita.R;
+import com.example.sicita.view.Login;
 
 import java.util.Timer;
 import java.util.TimerTask;

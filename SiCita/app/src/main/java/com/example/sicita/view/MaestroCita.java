@@ -1,4 +1,4 @@
-package com.example.sicita;
+package com.example.sicita.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TableLayout;
 import android.widget.Toast;
+
+import com.example.sicita.R;
 
 public class MaestroCita extends AppCompatActivity {
     private EditText txtid;EditText txtnombre;EditText txttipo;EditText Tiempo;
@@ -98,38 +100,38 @@ public class MaestroCita extends AppCompatActivity {
         int id=menuItem.getItemId();
         if (id == R.id.mnu_LoginAdmin)
         {
-            Intent newIntent=new Intent(this,LoginAdmin.class);
+            Intent newIntent=new Intent(this, LoginAdmin.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         }
         else if(id == R.id.mnu_LoginUsuario)
         {
-            Intent newIntent=new Intent(this,LoginUsuario.class);
+            Intent newIntent=new Intent(this, LoginUsuario.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         } else if(id == R.id.mnu_Sede)
         {
-            Intent newIntent=new Intent(this,Sede.class);
+            Intent newIntent=new Intent(this, Sede.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         } else if(id == R.id.mnu_SedeHorario)
         {
-            Intent newIntent=new Intent(this,Horarios.class);
+            Intent newIntent=new Intent(this, Horarios.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         }        else if(id == R.id.mnu_asesor)
         {
-            Intent newIntent=new Intent(this,Asesor.class);
+            Intent newIntent=new Intent(this, Asesor.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         } else if(id == R.id.mnu_Empresa)
         {
-            Intent newIntent=new Intent(this,Empresa.class);
+            Intent newIntent=new Intent(this, Empresa.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
@@ -141,13 +143,13 @@ public class MaestroCita extends AppCompatActivity {
 
         } else if(id == R.id.mnu_MarcaModelo)
         {
-            Intent newIntent=new Intent(this,MarcaModelo.class);
+            Intent newIntent=new Intent(this, MarcaModelo.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         } else if(id == R.id.mnu_Vehiculo)
         {
-            Intent newIntent=new Intent(this,Vehiculo.class);
+            Intent newIntent=new Intent(this, Vehiculo.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
@@ -159,25 +161,25 @@ public class MaestroCita extends AppCompatActivity {
 
         } else if(id == R.id.mnu_Cita)
         {
-            Intent newIntent=new Intent(this,Cita.class);
+            Intent newIntent=new Intent(this, Cita.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         }else if(id == R.id.mnu_CitaBuscar)
         {
-            Intent newIntent=new Intent(this,CitaBuscar.class);
+            Intent newIntent=new Intent(this, CitaBuscar.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         }else if(id == R.id.mnu_Historia)
         {
-            Intent newIntent=new Intent(this,Historia.class);
+            Intent newIntent=new Intent(this, Historia.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
         }else if(id == R.id.mnu_empresausuario)
         {
-            Intent newIntent=new Intent(this,EmpresaUsuario.class);
+            Intent newIntent=new Intent(this, EmpresaUsuario.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
 
