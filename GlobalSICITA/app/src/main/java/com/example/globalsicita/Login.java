@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Login extends AppCompatActivity {
 String usuario, clave;
 EditText txtusurio, txtclave;
@@ -23,5 +26,11 @@ Button btningresar;
 
 
 
-    }
+
+}
+
+private void validaringreso(){
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference().child("usuarios");
+
 }
