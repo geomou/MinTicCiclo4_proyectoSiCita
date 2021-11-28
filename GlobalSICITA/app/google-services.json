@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "57842047185",
+    "project_id": "globalsicita",
+    "storage_bucket": "globalsicita.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57842047185:android:da1a2ae97b10e4689ccdf0",
+        "android_client_info": {
+          "package_name": "com.example.globalsicita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57842047185-9pm300op7qmh80m1ljsvac0r1djpjjg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNAVu-2fcc4pZS9X4fA3jkyt0PnfHQ400"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57842047185-9pm300op7qmh80m1ljsvac0r1djpjjg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
