@@ -15,7 +15,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_base_car" />
+        app:srcCompat="@drawable/logo_base_car_background" />
 
     <EditText
         android:id="@+id/idtxtemailusuairo"
@@ -52,6 +52,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@color/red_200"
+
         android:text="Ingresar"
         android:textStyle="bold"
         app:cornerRadius="30dp"
@@ -76,5 +77,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idbtningresar"
         app:layout_constraintVertical_bias="0.0" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
