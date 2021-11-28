@@ -8,8 +8,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.citaMVP;
 
-public class Cita extends AppCompatActivity {
+public class Cita extends AppCompatActivity implements citaMVP.View{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

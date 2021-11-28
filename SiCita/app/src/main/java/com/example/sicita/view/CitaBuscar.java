@@ -19,11 +19,12 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.citabuscarMVP;
 
 import java.util.Calendar;
 
 public class CitaBuscar extends AppCompatActivity implements
-                View.OnClickListener {
+                View.OnClickListener , citabuscarMVP.View{
     Button btnDatePicker, btnTimePicker;
     EditText txtDate, txtTime;
     private CheckBox chkbuscarfecha,chkbuscarsede;

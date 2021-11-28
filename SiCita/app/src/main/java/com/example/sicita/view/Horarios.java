@@ -12,8 +12,9 @@ import android.widget.TableLayout;
 import android.widget.Toast;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.horariosMVP;
 
-public class Horarios extends AppCompatActivity {
+public class Horarios extends AppCompatActivity implements horariosMVP.View {
  private   EditText txtidsede, txtnombresede,txtnombrehorario;
     CheckBox chklunes, chkmartes, chkmiercoles, chkjueves, chkviernes,chksabado,chkdomingo,chkdisponible;
     Button btnactualizar,btnborrar;

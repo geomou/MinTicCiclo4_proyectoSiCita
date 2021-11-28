@@ -15,8 +15,9 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.vehiculoMVP;
 
-public class Vehiculo extends AppCompatActivity {
+public class Vehiculo extends AppCompatActivity implements vehiculoMVP.View {
     private EditText txtid,txtplaca,txtnombre;
     private EditText txtcaracteristicas;
     private Spinner spnmarca, spnmodeo,spnaño;

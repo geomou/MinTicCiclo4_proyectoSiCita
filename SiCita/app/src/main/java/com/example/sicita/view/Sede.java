@@ -14,8 +14,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.sedeMVP;
 
-public class Sede extends AppCompatActivity {
+public class Sede extends AppCompatActivity implements sedeMVP.View {
     private EditText txttid,txtidemp,txtempresa,txtnombresede, txtdireccion;
     Switch swmanto,swse,swlav,swrtm;
     Button btnactualizar,btnborrar;

@@ -15,8 +15,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.empresaMVP;
 
-public class Empresa extends AppCompatActivity {
+public class Empresa extends AppCompatActivity implements empresaMVP.View {
     private EditText txtid; EditText txtnit;EditText txtnombre;EditText txtdireccion;EditText txttel;EditText txttel2; EditText txtcontacto;EditText txturl;EditText txttoken;
     CheckBox  chkactivo;
     Button btnactualizar;Button btnborrar;

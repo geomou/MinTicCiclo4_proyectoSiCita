@@ -13,8 +13,9 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import com.example.sicita.R;
+import com.example.sicita.mvp.asesorMVP;
 
-public class Asesor extends AppCompatActivity {
+public class Asesor extends AppCompatActivity implements asesorMVP.View {
     private EditText txtid;EditText txtidentificacion;EditText txtnombre;EditText txttelefono; EditText txtmovil;EditText txtemail;
     Switch swmg; Switch swpintura;Switch swlatoneria;Switch swelectoespe;Switch swelectrogral;
     Button btnactualizar;Button btnborrar;
