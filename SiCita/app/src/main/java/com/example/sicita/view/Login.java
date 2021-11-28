@@ -44,8 +44,7 @@ public class Login extends AppCompatActivity implements loginMVP.View{
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
         );
 
-        presenter =new loginPresenter() ;
-        ApiInterface= Apicliente.loginRetrofit().create(ApiInterface.class);
+
         //Ocultar Accion bar
         getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
@@ -111,27 +110,9 @@ public class Login extends AppCompatActivity implements loginMVP.View{
     private Boolean ValidarIngreso(String  usuario,String clave)
     {
          ingreso=false;
-        ClassUsuario user=new ClassUsuario(txtusuario.toString(),txtclave.toString());
-        Call <ClassUsuario> calluser=ApiInterface.loginusuario(user);
-        calluser.enqueue(new Callback<ClassUsuario>() {
-            @Override
-            public void onResponse(Call<ClassUsuario> call, Response<ClassUsuario> response) {
-                ClassUsuario user1 = response.body();
-                Toast.makeText(getApplicationContext(), "Informacion cargada ", Toast.LENGTH_SHORT).show();
-                ingreso=true  ;
-            }
-
-            @Override
-            public void onFailure(Call<ClassUsuario> call, Throwable t) {
-                ingreso=false;
-                call.cancel();
-
-            }
-        });
 
 
-
-              return   ingreso =true;
+         return   ingreso =true;
 
 
     }

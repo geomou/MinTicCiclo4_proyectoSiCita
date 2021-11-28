@@ -5,32 +5,25 @@
       <map>
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_asesor.xml" value="0.33" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_cita.xml" value="0.35104166666666664" />
-        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_cita_buscar.xml" value="0.33" />
+        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_cita_buscar.xml" value="0.35104166666666664" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_empresa.xml" value="0.35104166666666664" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_empresa_usuario.xml" value="0.35104166666666664" />
-        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_historia.xml" value="0.1" />
-        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_horarios.xml" value="0.21829710144927536" />
-        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_historia.xml" value="0.35104166666666664" />
+        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_login_admin.xml" value="0.2776268115942029" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_login_usuario.xml" value="0.2875" />
-        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_maestro_cita.xml" value="0.1" />
+        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_maestro_cita.xml" value="0.33" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_main.xml" value="0.2875" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_marca_modelo.xml" value="0.35104166666666664" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_principal.xml" value="0.2875" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_sede.xml" value="0.2875" />
-        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_sede_horario.xml" value="0.33" />
+        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_sede_horario.xml" value="0.35104166666666664" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_splash2.xml" value="0.2776268115942029" />
-        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_vehiculo.xml" value="0.1" />
+        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_vehiculo.xml" value="0.35104166666666664" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/menu/menu_ppal.xml" value="0.33" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.30364583333333334" />
         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.30364583333333334" />
-        <entry key="..\:/Users/user/Documents/Mision TIC 2022/Desarrollo aplicaciones moviles/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_asesor.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/user/Documents/Mision TIC 2022/Desarrollo aplicaciones moviles/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_cita.xml" value="0.33" />
-        <entry key="..\:/Users/user/Documents/Mision TIC 2022/Desarrollo aplicaciones moviles/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_ingreso.xml" value="0.1" />
-        <entry key="..\:/Users/user/Documents/Mision TIC 2022/Desarrollo aplicaciones moviles/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_login.xml" value="0.11503623188405797" />
-        <entry key="..\:/Users/user/Documents/Mision TIC 2022/Desarrollo aplicaciones moviles/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_principal.xml" value="0.22" />
-        <entry key="..\:/Users/user/Documents/Mision TIC 2022/Desarrollo aplicaciones moviles/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/menu/menu_ppal.xml" value="0.33" />
       </map>
     </option>
   </component>

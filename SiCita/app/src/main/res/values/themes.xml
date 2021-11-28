@@ -15,7 +15,6 @@
 
 
 
-
     </style>
     <style name="MenuItems" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="android:textSize">8sp</item>
