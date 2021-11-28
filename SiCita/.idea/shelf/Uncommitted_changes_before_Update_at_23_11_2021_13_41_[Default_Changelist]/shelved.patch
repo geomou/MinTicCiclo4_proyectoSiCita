@@ -1,0 +1,153 @@
+Index: app/src/main/res/values/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources xmlns:tools=\"http://schemas.android.com/tools\">\r\n    <!-- Base application theme. -->\r\n    <style name=\"Theme.SiCita\" parent=\"Theme.MaterialComponents.DayNight.DarkActionBar\">\r\n        <!-- Primary brand color. -->\r\n        <item name=\"colorPrimary\">@color/red_500</item>\r\n        <item name=\"colorPrimaryVariant\">@color/red_700</item>\r\n        <item name=\"colorOnPrimary\">@color/white</item>\r\n        <!-- Secondary brand color. -->\r\n        <item name=\"colorSecondary\">@color/teal_200</item>\r\n        <item name=\"colorSecondaryVariant\">@color/teal_700</item>\r\n        <item name=\"colorOnSecondary\">@color/black</item>\r\n        <!-- Status bar color. -->\r\n        <item name=\"android:statusBarColor\" tools:targetApi=\"l\">?attr/colorPrimaryVariant</item>\r\n        <!-- Customize your theme here. -->\r\n\r\n\r\n\r\n\r\n    </style>\r\n    <style name=\"MenuItems\" parent=\"Theme.MaterialComponents.DayNight.DarkActionBar\">\r\n        <item name=\"android:textSize\">8sp</item>\r\n        <item name=\"android:fontFamily\">sans-serif-light</item>\r\n    </style>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/themes.xml b/app/src/main/res/values/themes.xml
+--- a/app/src/main/res/values/themes.xml	(revision 0c90ac18101d92e171ea076fac8ae50847af0669)
++++ b/app/src/main/res/values/themes.xml	(date 1636594247521)
+@@ -15,7 +15,6 @@
+ 
+ 
+ 
+-
+     </style>
+     <style name="MenuItems" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+         <item name="android:textSize">8sp</item>
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.example.sicita\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.SiCita\">\r\n        <activity\r\n            android:name=\".Splash2\"\r\n            android:exported=\"false\" />\r\n\r\n        <activity\r\n            android:name=\".Principal\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Historia\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Cita\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".CitaBuscar\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Vehiculo\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".EmpresaUsuario\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".LoginUsuario\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Login\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".MaestroCita\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Asesor\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".MarcaModelo\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".SedeHorario\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Sede\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".LoginAdmin\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Empresa\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".MainActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Splash\"\r\n            android:exported=\"true\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision 0c90ac18101d92e171ea076fac8ae50847af0669)
++++ b/app/src/main/AndroidManifest.xml	(date 1636569300744)
+@@ -10,9 +10,11 @@
+         android:supportsRtl="true"
+         android:theme="@style/Theme.SiCita">
+         <activity
++            android:name=".Inicial"
++            android:exported="false" />
++        <activity
+             android:name=".Splash2"
+             android:exported="false" />
+-
+         <activity
+             android:name=".Principal"
+             android:exported="false" />
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">SiCita</string>\r\n\r\n    <string name=\"usuario\">Usuario</string>\r\n    <string name=\"clave\">Clave</string>\r\n    <string name=\"enviar\">Enviar Información EMail</string>\r\n\r\n\r\n    <string name=\"actualizar\">Actualizar</string>\r\n    <string name=\"borrar\">Borrar</string>\r\n    <string name=\"buscar\">Buscar</string>\r\n\r\n    <string name=\"idempresa\">Id Empresa</string>\r\n    <string name=\"emp\">Empresa</string>\r\n    <string name=\"codsede\">Id Sede</string>\r\n    <string name=\"nombresede\">Nombre Sede</string>\r\n    <string name=\"dirsede\">Dirección Sede</string>\r\n\r\n    <string name=\"mantto\">Mantenimiento</string>\r\n    <string name=\"express\">Servicio Express</string>\r\n    <string name=\"lavado\">Lavado</string>\r\n    <string name=\"RTM\">RTM</string>\r\n\r\n    <string name=\"MG\">Mecanica General</string>\r\n    <string name=\"P\">Pintura</string>\r\n    <string name=\"L\">Latoneria</string>\r\n    <string name=\"EE\">Electico Especializado</string>\r\n    <string name=\"ET\">Electronico Especializado</string>\r\n\r\n\r\n    <string name=\"razon\">Razon Social</string>\r\n    <string name=\"direccion\">Dirección</string>\r\n    <string name=\"tel2\">Telefono 2</string>\r\n    <string name=\"contacto\">Contacto</string>\r\n    <string name=\"url\">Url API</string>\r\n    <string name=\"token\">Token</string>\r\n    <string name=\"activo\">Activo</string>\r\n\r\n    <string name=\"marca\">Marca</string>\r\n    <string name=\"desmarca\">Descripción Marca</string>\r\n\r\n    <string name=\"modelo\">Modelo</string>\r\n    <string name=\"desmodelo\">Descripción Modelo</string>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    <string name=\"login_name\">Logueo</string>\r\n    <string name=\"LoginUsuario\">Registro Usuario</string>\r\n    <string name=\"LoginAdmin\">Registro Admin</string>\r\n    <string name=\"Empresa\">Empresa</string>\r\n    <string name=\"Sede\">Sede</string>\r\n    <string name=\"MarcaModelo\">Maestro de Marca/Modelo</string>\r\n    <string name=\"SedeHorario\">Horario Sede</string>\r\n    <string name=\"EmpresaUsuario\">Usuario Empresa(Marca)</string>\r\n    <string name=\"Vehiculo\">Vehículo</string>\r\n    <string name=\"Asesor\">Asesor</string>\r\n    <string name=\"CitaBuscar\">Buscar Cita</string>\r\n    <string name=\"Cita\">Cita</string>\r\n    <string name=\"MaestroCita\">Datos maestros Cita</string>\r\n    <string name=\"Historia\">Cita</string>\r\n    <string name=\"Registro\">Cita</string>\r\n    <string name=\"Cliente\">Cita</string>\r\n    <string name=\"Compañia\">Cita</string>\r\n    <string name=\"Informes\">Cita</string>\r\n\r\n    <string name=\"Identificacion\">Identificación</string>\r\n    <string name=\"Nombre\">Nombres</string>\r\n    <string name=\"tel1\">Telefono </string>\r\n    <string name=\"movil\">Movil</string>\r\n    <string name=\"email\">Email</string>\r\n    <string name=\"chkadmin\">Es Admin</string>\r\n    <string name=\"chkasesor\">Es Asesor</string>\r\n\r\n    <string name=\"selec\">Selección</string>\r\n    <string name=\"horarios\">Descripción Horario</string>\r\n    <string name=\"lunes\">Lunes</string>\r\n    <string name=\"martes\">Martes</string>\r\n    <string name=\"miercoles\">Miercoles</string>\r\n    <string name=\"jueves\">Jueves</string>\r\n    <string name=\"viernes\">Viernes</string>\r\n    <string name=\"sabado\">Sabado</string>\r\n    <string name=\"domingo\">Domingo</string>\r\n\r\n    <string-array name=\"horas\">\r\n        <item>07:00 a.m.</item>\r\n        <item>08:00 a.m.</item>\r\n        <item>09:00 a.m.</item>\r\n        <item>10:00 a.m.</item>\r\n        <item>11:00 a.m.</item>\r\n        <item>12:00 m.d.</item>\r\n        <item>01:00 p.m.</item>\r\n        <item>02:00 p.m.</item>\r\n        <item>03:00 p.m.</item>\r\n        <item>04:00 p.m.</item>\r\n        <item>05:00 p.m.</item>\r\n        <item>06:00 p.m.</item>\r\n        <item>07:00 p.m.</item>\r\n     </string-array>\r\n    <string name=\"Nodis\">No Disponible</string>\r\n    <string name=\"dia\">Día</string>\r\n    <string name=\"hi\">Hora Inicio</string>\r\n    <string name=\"hf\">Hora Fin</string>\r\n    <string name=\"dis\">Dispo</string>\r\n    <string name=\"tipocita\">Tipo de Cita</string>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+--- a/app/src/main/res/values/strings.xml	(revision 0c90ac18101d92e171ea076fac8ae50847af0669)
++++ b/app/src/main/res/values/strings.xml	(date 1636569300487)
+@@ -43,11 +43,6 @@
+     <string name="desmodelo">Descripción Modelo</string>
+ 
+ 
+-
+-
+-
+-
+-
+     <string name="login_name">Logueo</string>
+     <string name="LoginUsuario">Registro Usuario</string>
+     <string name="LoginAdmin">Registro Admin</string>
+@@ -99,7 +94,7 @@
+         <item>05:00 p.m.</item>
+         <item>06:00 p.m.</item>
+         <item>07:00 p.m.</item>
+-     </string-array>
++    </string-array>
+     <string name="Nodis">No Disponible</string>
+     <string name="dia">Día</string>
+     <string name="hi">Hora Inicio</string>
+@@ -108,12 +103,4 @@
+     <string name="tipocita">Tipo de Cita</string>
+ 
+ 
+-
+-
+-
+-
+-
+-
+-
+-
+ </resources>
+\ No newline at end of file
+Index: app/src/main/java/com/example/sicita/Inicial.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/sicita/Inicial.java b/app/src/main/java/com/example/sicita/Inicial.java
+new file mode 100644
+--- /dev/null	(date 1636569861469)
++++ b/app/src/main/java/com/example/sicita/Inicial.java	(date 1636569861469)
+@@ -0,0 +1,38 @@
++package com.example.sicita;
++
++
++import androidx.appcompat.app.ActionBarDrawerToggle;
++import androidx.appcompat.app.AppCompatActivity;
++import androidx.appcompat.widget.Toolbar;
++import androidx.drawerlayout.widget.DrawerLayout;
++
++import android.os.Bundle;
++
++
++public class Inicial extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_inicial);
++
++        Toolbar toolbar = findViewById(R.id.barramenu);
++        setSupportActionBar((Toolbar) findViewById(R.id.barramenu));
++
++
++        DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
++        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
++                this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
++        drawerLayout.addDrawerListener(toggle);
++        toggle.syncState();
++        setContentView(R.layout.activity_inicial);
++    }
++    @Override
++    public void onBackPressed() {
++        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
++            drawerLayout.closeDrawer(GravityCompat.START);
++        } else {
++            super.onBackPressed();
++        }
++    }
++}
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_asesor.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_cita.xml\" value=\"0.35104166666666664\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_cita_buscar.xml\" value=\"0.35104166666666664\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_empresa.xml\" value=\"0.35104166666666664\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_empresa_usuario.xml\" value=\"0.35104166666666664\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_historia.xml\" value=\"0.35104166666666664\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_login.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_login_admin.xml\" value=\"0.2776268115942029\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_login_usuario.xml\" value=\"0.2875\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_maestro_cita.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_main.xml\" value=\"0.2875\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_marca_modelo.xml\" value=\"0.35104166666666664\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_principal.xml\" value=\"0.2875\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_sede.xml\" value=\"0.2875\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_sede_horario.xml\" value=\"0.35104166666666664\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_splash.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_splash2.xml\" value=\"0.2776268115942029\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_vehiculo.xml\" value=\"0.35104166666666664\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/menu/menu_ppal.xml\" value=\"0.33\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml\" value=\"0.30364583333333334\" />\r\n        <entry key=\"..\\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml\" value=\"0.30364583333333334\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"Android Studio default JDK\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 0c90ac18101d92e171ea076fac8ae50847af0669)
++++ b/.idea/misc.xml	(date 1636569324056)
+@@ -9,6 +9,7 @@
+         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_empresa.xml" value="0.35104166666666664" />
+         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_empresa_usuario.xml" value="0.35104166666666664" />
+         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_historia.xml" value="0.35104166666666664" />
++        <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_inicial.xml" value="0.24365942028985507" />
+         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_login.xml" value="0.33" />
+         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_login_admin.xml" value="0.2776268115942029" />
+         <entry key="..\:/MinTicCiclo4_proyectoSiCita/SiCita/app/src/main/res/layout/activity_login_usuario.xml" value="0.2875" />
