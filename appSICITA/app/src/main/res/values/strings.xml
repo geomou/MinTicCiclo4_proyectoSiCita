@@ -1,3 +1,149 @@
 <resources>
     <string name="app_name">appSICITA</string>
+
+    <string name="id">ID</string>
+
+
+    <string name="usuario">Usuario</string>
+    <string name="clave">Clave</string>
+    <string name="enviar">Enviar Información EMail</string>
+
+
+    <string name="actualizar">Actualizar</string>
+    <string name="borrar">Borrar</string>
+    <string name="buscar">Buscar</string>
+
+    <string name="idempresa">Id Empresa</string>
+    <string name="emp">Empresa</string>
+    <string name="codsede">Id Sede</string>
+    <string name="nombresede">Nombre Sede</string>
+    <string name="dirsede">Dirección Sede</string>
+
+    <string name="mantto">Mantenimiento</string>
+    <string name="express">Servicio Express</string>
+    <string name="lavado">Lavado</string>
+    <string name="RTM">RTM</string>
+
+    <string name="MG">Mecanica General</string>
+    <string name="P">Pintura</string>
+    <string name="L">Latoneria</string>
+    <string name="EE">Electronico Especializado</string>
+    <string name="ET">Electronico General</string>
+
+
+    <string name="razon">Razon Social</string>
+    <string name="direccion">Dirección</string>
+    <string name="tel2">Telefono 2</string>
+    <string name="contacto">Contacto</string>
+    <string name="url">Url API</string>
+    <string name="token">Token</string>
+    <string name="activo">Activo</string>
+    <string name="inactivo">Inactivo</string>
+
+
+    <string name="marca">Marca</string>
+    <string name="desmarca">Descripción Marca</string>
+
+    <string name="modelo">Modelo</string>
+    <string name="desmodelo">Descripción Modelo</string>
+    <string name="placa">Placa</string>
+    <string name="detalleveh">Descripción Vehículo</string>
+    <string name="añoveh">Año</string>
+    <string name="fecha">Fecha</string>
+    <string name="hora">Hora</string>
+    <string name="buscarfecha">Buscar por fecha</string>
+    <string name="buscarsede">Buscar por sede</string>
+    <string name="buscarcita">Buscar</string>
+
+
+    <string name="seleccionar">Sel</string>
+    <string name="solicitud">Enviar solicitud cancelación</string>
+    <string name="crearcita">Crear Cita</string>
+
+    <string name="canalcita">Canal Cita</string>
+    <string name="observaciones">Observaciones</string>
+    <string name="transporte">Requiere Transporte</string>
+    <string name="tiempo">Tiempo Final Estimado</string>
+    <string name="correo">Enviar Correo</string>
+
+
+    <string name="login_name">Logueo</string>
+    <string name="LoginUsuario">Registro Usuario</string>
+    <string name="LoginAdmin">Registro Admin</string>
+    <string name="Empresa">Empresa</string>
+    <string name="Sede">Sede</string>
+    <string name="MarcaModelo">Maestro de Marca/Modelo</string>
+    <string name="SedeHorario">Horario Sede</string>
+    <string name="EmpresaUsuario">Usuario Empresa(Marca)</string>
+    <string name="Vehiculo">Vehículo</string>
+    <string name="Asesor">Asesor</string>
+    <string name="CitaBuscar">Buscar Cita</string>
+    <string name="Cita">Cita</string>
+    <string name="MaestroCita">Datos maestros Cita</string>
+    <string name="Historia">Cita</string>
+    <string name="Registro">Cita</string>
+    <string name="Cliente">Cita</string>
+    <string name="Compañia">Cita</string>
+    <string name="Informes">Cita</string>
+
+    <string name="Identificacion">Identificación</string>
+    <string name="Nombre">Nombres</string>
+    <string name="tel1">Telefono </string>
+    <string name="movil">Movil</string>
+    <string name="email">Email</string>
+    <string name="chkadmin">Es Admin</string>
+    <string name="chkasesor">Es Asesor</string>
+
+    <string name="selec">Selección</string>
+    <string name="horarios">Descripción Horario</string>
+    <string name="lunes">Lunes</string>
+    <string name="martes">Martes</string>
+    <string name="miercoles">Miercoles</string>
+    <string name="jueves">Jueves</string>
+    <string name="viernes">Viernes</string>
+    <string name="sabado">Sabado</string>
+    <string name="domingo">Domingo</string>
+
+
+    <string name="Nodis">No Disponible</string>
+    <string name="dia">Día</string>
+    <string name="hi">Hora Inicio</string>
+    <string name="hf">Hora Fin</string>
+    <string name="dis">Dispo</string>
+    <string name="tipocita">Tipo de Cita</string>
+
+    <string name="lon">Longitud</string>
+    <string name="lat">Latitud</string>
+    <string name="propietario">propietario</string>
+
+
+    <string-array name="horas">
+        <item>07:00 a.m.</item>
+        <item>08:00 a.m.</item>
+        <item>09:00 a.m.</item>
+        <item>10:00 a.m.</item>
+        <item>11:00 a.m.</item>
+        <item>12:00 m.d.</item>
+        <item>01:00 p.m.</item>
+        <item>02:00 p.m.</item>
+        <item>03:00 p.m.</item>
+        <item>04:00 p.m.</item>
+        <item>05:00 p.m.</item>
+        <item>06:00 p.m.</item>
+        <item>07:00 p.m.</item>
+    </string-array>
+    <string-array name="añosmodelo">
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+    </string-array>
+
 </resources>
